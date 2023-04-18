@@ -34,6 +34,7 @@ function Footer() {
   );
 }
 
+<<<<<<< HEAD
 export default Footer;
 
 // import React from 'react';
@@ -70,3 +71,6 @@ export default Footer;
 // }
 
 // export default DisasterFooter;
+=======
+export default Footer;
+>>>>>>> 20fe82f (working on footer)
