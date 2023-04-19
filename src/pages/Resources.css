@@ -1,0 +1,358 @@
+/* Resources.css */
+
+/* Hero section */
+.hero-section {
+    height: 400px;
+    /* background-image: url('https://media.istockphoto.com/id/916948754/vector/flood-rescue.jpg?s=612x612&w=0&k=20&c=mTrfgh1SWiXsxSlhm5xv8NCuRimLyk1SvtqWav7VEao='); */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  /* Overlay on top of hero image */
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  Header
+  .resources-header {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  /* Articles section */
+
+  
+  .articles-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .article-item {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  .article-item-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .article-item-container img {
+    margin-right: 20px;
+  }
+  
+  .article-item-content {
+    padding: 10px;
+  }
+  
+  .article-item-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .article-item-description {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+  
+
+
+  .articles-container {
+    margin-top: 50px;
+    color: grey;
+
+  }
+  
+  .articles-header {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+  
+  .article-item {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+
+
+/*   
+  Videos section */
+
+  .videos-container {
+    margin-top: 50px;
+  }
+  
+  .videos-header {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+  
+  .video-wrapper {
+    position: sticky;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; 
+    display: flex;
+    justify-content: center;
+  }
+  
+  .video-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+
+
+
+
+  /* Volunteer section */
+  .volunteer-container {
+    margin-top: 50px;
+  }
+  
+  .volunteer-header {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+  
+  .volunteer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    border-color: red;
+  }
+  
+  .volunteer-label {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  
+  .volunteer-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 25px;
+    border: none;
+    border-bottom: 2px solid yellow;
+    font-size: 1rem;
+  }
+  
+  .volunteer-textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    margin-bottom: 25px;
+    border-color: black;
+    border-bottom: 2px solid black;
+    font-size: 1rem;
+  }
+  
+  .volunteer-button {
+    padding: 10px 20px;
+    background-color: #F1C40F;
+    color: #fff;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+  }
+  
+  .volunteer-button:hover {
+    background-color: black;
+  }
+  
+  /* Donate section */
+
+  h2 {
+    color:#F1C40F;
+    
+  }
+  .donate-container {
+    margin-top: 50px;
+  }
+  
+  .donate-header {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+  
+  .donate-paragraph {
+    font-size: 1.25rem;
+    margin-bottom: 25px;
+    color: #F1C40F;
+  }
+  
+  .donate-button {
+    padding: 10px 20px;
+    background-color: orange;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    }
+    
+  /* Animations */
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: slideIn 1s forwards;
+    }
+    
+    @keyframes slideIn {
+    from {
+    transform: translateX(-50%);
+    opacity: 0;
+    }
+    to {
+    transform: translateX(0);
+    opacity: 1;
+    }
+    }
+    
+    .video-iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+    animation: fadeIn 1s forwards;
+    }
+    
+    @keyframes fadeIn {
+    from {
+    opacity: 0;
+    }
+    to {
+    opacity: 1;
+    }
+    }
+    
+    .volunteer-form {
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    animation: slideInFromRight 1s forwards;
+    }
+    
+    @keyframes slideInFromRight {
+    from {
+    transform: translateX(50%);
+    opacity: 0;
+    }
+    to {
+    transform: translateX(0);
+    opacity: 1;
+    }
+    }
+    
+    .volunteer-label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #ccc;
+    }
+    
+    .volunteer-input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    
+    }
+    
+    .volunteer-textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 150px;
+    color: black;
+    }
+    
+    
+    
+    @media (min-width: 768px) {
+    .resources-container {
+    /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+}
+    .hero-section {
+    flex-basis: 50%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    }
+    
+    .articles-container {
+        background-color: white;
+    flex-basis: calc(50% - 40px);
+    }
+    
+    .videos-container {
+        background-color:white;
+    flex-basis: calc(50% - 40px);
+    }
+    
+    .donate-container {
+        background-color: black;
+    flex-basis: 100%;
+  
+    }
+    
+    .articles-list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    }
+    
+    .article-item {
+    margin-bottom: 20px;
+    list-style: none;
+    }
+    
+    .article-item a {
+    color: #008CBA;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    }
+    
+    .article-item a:hover {
+    color: #00698c;
+    }
+    
+    .videos-header,
+    .volunteer-header,
+    .donate-header {
+    margin-top: 50px;
+    }  
+
+  
