@@ -1,0 +1,23 @@
+.nav-container {
+    text-align: center;
+}
+
+nav {
+    display: inline-block;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #000;
+}

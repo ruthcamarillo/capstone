@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+// BrowserRouter, Route,
 import '../styles/NoPage.css'
 
 
