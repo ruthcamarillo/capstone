@@ -141,10 +141,10 @@ background-color: white;
     /* border-color: red; */
   }
   
-  .volunteer-label {
+  /* .volunteer-label {
     font-size: 1.25rem;
     margin-bottom: 10px;
-  }
+  } */
   
   .volunteer-input {
     width: 100%;
@@ -182,11 +182,10 @@ background-color: white;
 /*   
   Donate section */
 
-   h2 {
+  /* h2 {
     color:#F1C40F;
     
   }
-  /*
   .donate-container {
     margin-top: 50px;
   }
