@@ -73,27 +73,10 @@ Spread the word: Share information about the disaster and relief efforts on soci
     </li>
   </ul>
 </section>
- <section className="volunteer-container">
-        <h2 className="volunteer-header">Volunteer Oportunities</h2>
-        {showVolunteerForm ? (
-          <form className="volunteer-form">
-            <label htmlFor="name" className="volunteer-label">Name:</label>
-            <input type="text" id="name" name="name" className="volunteer-input" />
-            <label htmlFor="email" className="volunteer-label">Email:</label>
-            <input type="email" id="email" name="email" className="volunteer-input" />
-            <label htmlFor="phone" className="volunteer-label">Phone:</label>
-            <input type="tel" id="phone" name="phone" className="volunteer-input" />
-            <label htmlFor="availability" className="volunteer-label">Availability:</label>
-            <textarea id="availability" name="availability" className="volunteer-textarea"></textarea>
-            <button type="submit" className="volunteer-button">Submit</button>
-          </form>
-        ) : (
-          <button onClick={handleVolunteerClick} className="volunteer-button">Sign up to Volunteer</button>
-        )}
-      </section> 
+
 
 <section className="videos-container">
-  <h2 className="videos-header">Watch video to learn more about disaster preparedness!</h2>
+  <h2 className="videos-header">Watch the video below to learn more about Disaster Preparedness!</h2>
   <div className="video-wrapper">
   <iframe width="950" height="534" src="https://www.youtube.com/embed/LnMGN2k6NxA" title="Emergency Preparedness Introduction | CODSN" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </div>
