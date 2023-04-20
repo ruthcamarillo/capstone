@@ -32,6 +32,47 @@ background-color: white;
   /* Articles section */
 
   
+
+/* Article section styles */
+.article-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.article-item {
+  margin-bottom: 40px;
+}
+
+.article-item-content {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+}
+
+.article-item-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.article-item-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.article-item-description li {
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
   .articles-list {
     display: flex;
     flex-wrap: wrap;
