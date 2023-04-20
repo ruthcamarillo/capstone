@@ -17,6 +17,8 @@ function Navbar() {
 
                 <li class="nav-item"> <a> <Link to="/Resources">Resources</Link> </a> </li>
 
+                <li class="nav-item"> <a> <Link to="/Signup">Volunteer</Link> </a> </li>
+
 
             </ul>
         </nav>
