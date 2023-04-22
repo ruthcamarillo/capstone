@@ -4,9 +4,9 @@ import { BrowserRouter, Route, Link } from "react-router-dom";
 function Contact() {
   return (
     <div>
-        <h1>Contact Us</h1>
+      <h1>Contact Us</h1>
       <div className="container">
-        <form action="action_page.php">
+        <form action="action_page.php" method="POST">
           <label htmlFor="fname">First Name</label>
           <input type="text" id="fname" name="firstname" placeholder="Your name.." />
 
