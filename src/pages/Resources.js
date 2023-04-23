@@ -10,6 +10,10 @@ function Resources() {
   };
 
   return (
+
+
+
+    
     <main className="resources-container">
       <h1 className="resources-header">Disaster Relief Resources</h1>
       <div className="hero-section">
