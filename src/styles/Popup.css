@@ -14,13 +14,14 @@
 
 .popup-inner {
     position: relative;
-    padding: 32px;
+    padding: 30px;
     width: 100%;
-    max-width: 640px;
-    background-color: #8cdffd;
+    max-width: 600px;
+    background-color: #5f89bd;
 
-    border: solid 10px #5f89bd;
-    border-radius: 25px;
+
+    border-radius: 35px;
+    color: #2E5061;
 }
 
 .popup-inner .close-btn {

@@ -9,7 +9,7 @@ function Popup(props) {
     const adminUser = {
         email: "rooot@gmail.com",
         password: "admin123",
-        isAdmin: true
+
     }
     const [user, setUser] = useState({ name: "", email: "" });
     const [error, setError] = useState("");
@@ -21,7 +21,8 @@ function Popup(props) {
             console.log("Your In Gang!")
             setUser({
                 name: details.name,
-                email: details.email
+                email: details.email,
+                isAdmin: adminUser.email === details.email && adminUser.password === details.password
 
             })
         }
@@ -32,7 +33,7 @@ function Popup(props) {
     }
 
     const Logout = () => {
-        setUser({ name: "", email: "" });
+        setUser({ name: "", email: "", isAdmin: false });
     }
 
     return (props.trigger) ? (
@@ -46,6 +47,7 @@ function Popup(props) {
                     <div>
                         <h2>Welcome, <span>{user.name}</span></h2>
                         <Link to="/Admin">Go to Admin Page</Link>
+                        <Admin isAdmin={user.isAdmin} />
                         <button onClick={Logout}> Logout</button>
                     </div>
 
