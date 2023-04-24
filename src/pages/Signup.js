@@ -15,7 +15,7 @@ function VolunteerSignup() {
   return (
     <div>
       <h1>Volunteer Signup</h1>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} method="POST">
         <label htmlFor="name">Name</label>
         <input type="text" id="name" name="name" value={name} onChange={(e) => setName(e.target.value)} />
 

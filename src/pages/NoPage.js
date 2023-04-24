@@ -8,7 +8,6 @@ function NoPage() {
 
     return (
         <div>
-            <h1>You're Lost! </h1>
             <Link to="/" target="_blank" >
 
                 <div class="container">
@@ -332,7 +331,7 @@ function NoPage() {
                 </div>
 
             </Link>
-            <h1> Click On 404 to go Back!</h1>
+
 
         </div>
     );
