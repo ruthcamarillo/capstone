@@ -1,4 +1,8 @@
 /* Resources.css */
+.resources-container{
+  background-color: white; /* set the background color to light blue */
+  /* add any other styles you want for this page */
+}
 
 /* Hero section */
 .hero-section {
@@ -21,6 +25,15 @@ background-color: white;
     background-color: white;
   }
   
+
+/* resources Header */
+
+
+h1.resources-header{
+  color: #173E76;
+}
+
+
   Header
   .resources-header {
     text-align: center;
@@ -38,6 +51,12 @@ background-color: white;
   margin: 0 auto;
   padding: 40px 20px;
 }
+ul.articles-list{
+  color: #173E76;
+  /* text-emphasis-style: bold; */
+}
+
+
 
 .article-item {
   margin-bottom: 40px;
@@ -46,13 +65,19 @@ background-color: white;
 .article-item-content {
   padding: 20px;
  
-  box-shadow: 0px 2px 6px rgba(255, 74, 3, 0.912);
+  box-shadow: 0px 2px 6px rgba(12, 141, 216, 0.912);
 }
 
 .article-item-title {
   font-size: 24px;
   margin-bottom: 10px;
 }
+
+
+h3.article-item-title  {
+  color: #173E76;;
+}
+
 
 .article-item-description {
   font-size: 16px;
