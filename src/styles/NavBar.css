@@ -61,12 +61,13 @@
   }
   
   @media screen and (max-width: 900px) {
-    .logo {
+    
+    /* .logo {
       display: none;
-    }
+    } */
   
     nav li {
-      margin-left: 0.5rem;
+      margin-left: 1rem;
     }
   }
   
