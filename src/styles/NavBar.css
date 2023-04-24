@@ -64,8 +64,36 @@ nav li a:hover {
   .logo {
     display: none;
   }
-
+/*
   nav li {
+
+    margin-left: 1.5rem;
+  }
+  
+  nav li:first-child {
+    margin-left: 0;
+  }
+  
+  nav li a {
+    text-decoration: none;
+    color: #F5F6FA;
+  }
+  
+  nav li a:hover {
+    text-decoration: none;
+    color: #a7afcc;
+  }
+  
+  @media screen and (max-width: 900px) {
+    
+    /* .logo {
+      display: none;
+    } */
+  
+    nav li {
+      margin-left: 1rem;
+    }
     margin-left: 0.5rem;
+/*
   }
 }
