@@ -16,10 +16,6 @@ function Signup() {
   }
 
   return (
-<<<<<<< HEAD
-
-
-
     <main className="contact-container">
         {/* <h1>Volunteer Opportunities</h1> */}
 
@@ -46,11 +42,6 @@ Volunteering on the ground: Volunteers can help with search and rescue efforts, 
       <h2> Sign Up to Help With Disaster Relief!</h2>
        
       <div className="form-group">
-=======
-    <div>
-      <h1>Volunteer Signup</h1>
-      <form onSubmit={handleSubmit} method="POST">
->>>>>>> 89cecdd3f4cf5a899c4ac4dc41e0b9ec77d75156
         <label htmlFor="name">Name</label>
         <input
           type="text"
