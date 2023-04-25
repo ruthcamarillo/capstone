@@ -29,6 +29,7 @@ background-color: white;
 /* resources Header */
 
 
+
 h1.resources-header{
   color: #173E76;
 }
@@ -44,68 +45,104 @@ h1.resources-header{
   
   /* Articles section */
 
+  .right {
+    float: right;
+  }
+  
+
+  body {
+    background-color: #F3EFEF;
+    /* font-family: 'Helvetica Neue', sans-serif; */
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  h1, h2, h3 {
+    /* font-family: 'Bodoni MT', serif; */
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  h1 {
+    font-size: 36px;
+    letter-spacing: 2px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+  
+  h3 {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  
+  p {
+    font-weight: normal;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  a {
+    color: #0066CC;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+
+  .section {
+    margin-bottom: 60px;
+  }
+  
+  .section-heading {
+    margin-bottom: 20px;
+  }
+  
+  .section-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    flex-basis: calc(33.33% - 20px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  
+  .card:hover {
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    color: royalblue;
+  }
+  
+  .card-image {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card-image img {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+
+  
 
 /* Article section styles */
-.article-section {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 40px 20px;
-}
-ul.articles-list{
-  color: #173E76;
-  text-emphasis-style: bold;
-}
 
 
 
-.article-item {
-  margin-bottom: 40px;
-}
-
-.article-item-content {
-  padding: 20px;
- 
-  box-shadow: 0px 2px 6px rgba(12, 141, 216, 0.912);
-}
-
-.article-item-title {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-
-h3.article-item-title  {
-  color: #173E76;
-  text-align: left;
-}
-
-
-.article-item-description {
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-
-.article-item-description li {
-  margin-bottom: 10px;
-}
-
-
-/* Float Images Keep This  */
-.article-item-container {
-  overflow: auto;
-  padding: 20px;
-}
-
-.article-item-container img {
-  float: left;
-  margin-right: 20px;
-  max-width: 70%;
-}
-
-.article-item-content {
-  margin-left: 160px;
-  border-radius: 2rem;
-}
 
 
 /* List  */
@@ -117,11 +154,7 @@ ul {
 }
 
 
-
-
-
-
-
+ 
 
 
   /* Volunteer section */
@@ -269,7 +302,7 @@ ul {
 }
     .hero-section {
     flex-basis: 50%;
-    height: 100vh;
+    height: 80vh;
     position: relative;
     overflow: hidden;
     }
@@ -289,8 +322,8 @@ ul {
     
     .articles-list {
     display: flex;
-    flex-direction: column;
-    padding-left: 0;
+   
+    padding-left: 10%;
     }
     
     .article-item {

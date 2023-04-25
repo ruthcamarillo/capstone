@@ -1,18 +1,21 @@
 
 .Container-form{
-  background-image: url(https://www.sahf.org/wp-content/uploads/2021/06/il_page_weempower.png);
+  background-image: url('../images/ocean.svg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
 }
+
+
+
 
   form {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 50%;
     margin: auto;
     padding: 20px;
-    background-color: #fff;
+    background-image: ;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }

@@ -14,7 +14,9 @@ function Contact() {
 
   return (
     <div className='Container-form'>
+  
       <h1>Contact Us</h1>
+     
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">Name</label>
         <input type="text" id="name" name="name" value={name} onChange={(e) => setName(e.target.value)} />
@@ -34,6 +36,20 @@ function Contact() {
         <textarea id="message" name="message" value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
 
         <input type="submit" value="Submit" />
+
+        <div className="Container-address">
+        <h2>Our Address</h2>
+        <p>123 Main Street</p>
+        <p>Anytown, USA</p>
+        <p>12345</p>
+      </div>
+
+      <div className="Container-phone">
+        <h2>Call Us</h2>
+        <p>Phone: 555-555-5555</p>
+        <p>Fax: 555-555-5556</p>
+      </div>
+
       </form>
     </div>
   );

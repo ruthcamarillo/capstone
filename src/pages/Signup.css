@@ -4,6 +4,19 @@
   
 } */
 
+header{
+  background-image: url(https://www.sahf.org/wp-content/uploads/2021/06/il_page_wesupport.png);
+  background-color: aliceblue;
+  padding: 20%;
+  padding: 10%;
+  margin-bottom: 5%;
+}
+
+
+h1{
+color: #0099cc;
+}
+
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -45,6 +58,7 @@ Volunteer Signup */
   border-radius: 5px;
   display: flex;
   
+  
 
 }
 
@@ -69,24 +83,29 @@ h4 {
   max-width: 500px;
   margin: 0 auto;
   opacity: 80%;
-  background-color: aliceblue;
+  background-color: white;
   border: #173E76;
+  margin-bottom: 5%;
   
 }
 
 
 .contact-container{
-  background-image: url(https://www.sahf.org/wp-content/uploads/2021/06/il_page_wesupport.png);
-  background-color:aliceblue;
-  background-size: contain;
+  background-image: url('../images/svg2.svg');
+  background-color:white;
+  background-size: cover;
   background-position:center;
   background-repeat: no-repeat;
 }
 
 
 
+h1 {
+  color:#173E76 ;
+}
 
-h1, h2 {
+
+h2 {
   color: #173E76;
 }
 /* Labels */
