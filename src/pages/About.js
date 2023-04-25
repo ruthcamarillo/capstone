@@ -3,7 +3,6 @@ import React from 'react';
 import '../styles/About.css';
 import SearchBar from "../components/Card";
 import Card from "../components/Card";
-<<<<<<< HEAD
 
 // const CardData = [
 //   {
@@ -39,20 +38,6 @@ function About() {
       <h3>Here Jorge will add some info about each of us. Just need everyones pic and info.</h3>
       <SearchBar data={Card} />
       <Card data={Card} />
-=======
-import { getByTitle } from '@testing-library/react';
-
-function About() {
-  return (
-    <div className='about'>
-      <h1>About</h1>
-      <h3>Here Jorge will add some info about each of us. Just need everyones pic and info.</h3>
-
-      <SearchBar data={Card} />
-
-      <Card data ={Card} />
-
->>>>>>> 89cecdd3f4cf5a899c4ac4dc41e0b9ec77d75156
     </div>
   );
 }

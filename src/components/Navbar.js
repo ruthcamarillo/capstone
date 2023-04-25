@@ -1,13 +1,8 @@
-<<<<<<< HEAD
-import React from "react";
-import '../styles/NavBar.css'
-import { Link } from "react-router-dom";
-=======
+
 import React, { useState } from "react";
 import '../styles/NavBar.css'
 import { Link } from "react-router-dom";
 import Popup from "./Popup";
->>>>>>> 89cecdd3f4cf5a899c4ac4dc41e0b9ec77d75156
 
 // BrowserRouter, Route,
 

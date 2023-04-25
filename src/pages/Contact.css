@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 .Container-form{
   background-image: url('../images/ocean.svg');
@@ -53,7 +52,6 @@
     background-color: #d35400;
   }
   
-=======
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 
 h1 {
@@ -107,4 +105,3 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #45a049;
 }
->>>>>>> 89cecdd3f4cf5a899c4ac4dc41e0b9ec77d75156
