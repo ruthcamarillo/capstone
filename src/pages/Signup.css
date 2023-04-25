@@ -1,43 +1,138 @@
-form {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin: auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
+
+
+/* .signup-article{
   
-  label {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
+} */
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  width: fit-content;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+
+.article {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 50%;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+/* 
+Volunteer Signup */
+
+
+.signup-article {
+  background-color: transparent;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 60%;
+  margin: 20px;
+  padding: 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  display: flex;
   
-  input,
-  select,
-  textarea {
-    font-size: 1rem;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    margin-bottom: 20px;
-  }
+
+}
+
+.signup-article:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+  color: #006699;
+}
+
+h4 {
+  color: #0099cc;
+}
+
+
+
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  opacity: 80%;
+  background-color: aliceblue;
+  border: #173E76;
   
-  input[type="submit"] {
-    background-color: #e67e22;
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #d35400;
-  }
-  
+}
+
+
+.contact-container{
+  background-image: url(https://www.sahf.org/wp-content/uploads/2021/06/il_page_wesupport.png);
+  background-color:aliceblue;
+  background-size: contain;
+  background-position:center;
+  background-repeat: no-repeat;
+}
+
+
+
+
+h1, h2 {
+  color: #173E76;
+}
+/* Labels */
+.form-group {
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+  color: #173E76;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+  border: 2px solid #173E76;
+  border-radius: 4px
+}
+
+button {
+  background-color: #173E76;
+  color: white;
+}
+
+
+
+.video-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background-color:white;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 80%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}

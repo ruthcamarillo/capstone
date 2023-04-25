@@ -53,7 +53,7 @@ h1.resources-header{
 }
 ul.articles-list{
   color: #173E76;
-  /* text-emphasis-style: bold; */
+  text-emphasis-style: bold;
 }
 
 
@@ -75,7 +75,8 @@ ul.articles-list{
 
 
 h3.article-item-title  {
-  color: #173E76;;
+  color: #173E76;
+  text-align: left;
 }
 
 
@@ -98,11 +99,12 @@ h3.article-item-title  {
 .article-item-container img {
   float: left;
   margin-right: 20px;
-  max-width: 100%;
+  max-width: 70%;
 }
 
 .article-item-content {
   margin-left: 160px;
+  border-radius: 2rem;
 }
 
 
@@ -110,42 +112,14 @@ h3.article-item-title  {
 
 ul {
   list-style: none;
+  /* list-style-image: url('https://static.thenounproject.com/png/4626993-200.png'); */
+ 
 }
 
 
 
 
 
-/*   
-  Videos section */
-
-  .videos-container {
-    margin-top: 50px;
-  }
-  
-  .videos-header {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 25px;
-  }
-  
-  .video-wrapper {
-    position: sticky;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%; 
-    display: flex;
-    justify-content: center;
-  }
-  
-  .video-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
 
 
 
@@ -203,41 +177,7 @@ ul {
   .volunteer-button:hover {
     background-color: black;
   }
-/*   
-  Donate section */
 
-  /* h2 {
-    color:#F1C40F;
-    
-  }
-  .donate-container {
-    margin-top: 50px;
-  }
-  
-  .donate-header {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 25px;
-  }
-  
-  .donate-paragraph {
-    font-size: 1.25rem;
-    margin-bottom: 25px;
-    color: #F1C40F;
-  }
-  
-  .donate-button {
-    padding: 10px 20px;
-    background-color: orange;
-    color: #FFFFFF;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    margin-top: 20px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    }
-     */
   /* Animations */
 
 .hero-image {
@@ -339,10 +279,7 @@ ul {
     flex-basis: calc(50% - 40px);
     }
     
-    .videos-container {
-        background-color:white;
-    flex-basis: calc(50% - 40px);
-    }
+    
     
     .donate-container {
         background-color: black;
@@ -371,8 +308,7 @@ ul {
     .article-item a:hover {
     color: orange;
     } 
-    
-    .videos-header,
+   
     .volunteer-header,
     .donate-header {
     margin-top: 50px;
@@ -381,184 +317,3 @@ ul {
   
 
 
-/* 
-    Fix this Code 
-    info section
-.res-info-container{
-  background-color:  #608499;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.info{
-  background-color: #608499;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(1, 1fr);
-  justify-items: center;
-  padding: 50px;
-}
-
-.info-video{
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
-  flex-direction: column; 
-  align-content: stretch;
-}
-
-.info-text{
-  display: flex;
-  align-items: center;
-  flex-direction: column; 
-  align-content: stretch;
-  color:white;
-  padding: 30px;
-}
-
-.info-text h2{
- text-align: center;
- letter-spacing: 1px;
- font-size: 20px;
- font-weight: bold;
- margin-bottom: 30px;
-}
-
-.info-text p{
-  text-align: center;
-  font-size: 15px;
-}
-
-.info-text button{
-  padding: 10px;
-  margin-top: 10px;
-  border: none;
-  background-color: #5CB3C1;
-  color: white;
-  border-radius: 3px;
-}
-
-.info-text button:hover{
-  background-color: white;
-  color: rgb(26, 25, 25);
-}
-
-/* get-involved */
-/* .res-getInvolved-container{
-  background-color: rgb(255, 255, 255);
-}
-
-.res-getInvolved-header{
-  background-image: url('/img/res-solutions.jpeg');
-  background-attachment: static;
-  background-size: cover;
-  height: 300px;
-  margin: 10px;
-}
-
-.res-getInvolved-container h3{
-  color: rgb(56, 52, 52);
-  text-align: center;
-  font-size: 50px;
-  letter-spacing: 1px;
-}
-
-.solutions{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(2, 1fr);
-  justify-items: center;
-  margin: 30px;
-}
-
-.solutions-text{
- margin: 30px;
- text-align: center;
- color: rgb(56, 52, 52);
-}
-
-.solutions-text img{
-  margin-left: 50px;
-}
-
-.quote-container h3{
-  background-image: url('/img/res-hero-img.jpeg');
-  background-attachment: fixed;
-  background-size: cover;
-  height: 300px;
-  margin: 10px;
-  padding: 125px;
-  text-align: center;
-  color: white;
-} */
-
-/* related articles */
-/* .res-resources-container{
-  background-color: rgb(255, 255, 255);
-}
-
-.res-resources-container h3{
-  text-align: center;
-  font-size: 25px;
-  letter-spacing: 2px;
-}
-
-.resources{
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(2, 1fr);
-  justify-items: center;
-  margin: 10px 30px;
-}
-
-.articles:hover{
--webkit-transform: scale(1.1);
--ms-transform: scale(1.1);
-transform: scale(1.1);
-transition: 1s ease;
-}
-
-.articles{
-  background-color: rgb(26, 26, 26);
-  margin-bottom: 30px;
-  text-align: left;
-  color: white;
-  margin: 10px 30px;
-  padding-bottom: 30px;
-  margin-bottom: 50px;
-}
-
-.articles img{
-  width: 100%;
-}
-
-.articles h4{
-  margin-top: 10px;
-  font-size: 15px;
-  padding-left: 20px;
-  color: gray;
-}
-
-.articles p{
-  padding-left: 20px;
-  padding-right: 20px;
-  font-size:12px;
-  margin-bottom: 30px;
-  margin-top: 30px;
-}
-
-.articles a{
-text-decoration: none;
-font-size: 15px;
-padding-left: 20px;
-padding-right: 20px;
-color: white;
-text-align: left;
-display: block;
-}
-
-.articles a:hover{
-  text-decoration: underline;
-  color: #5CB3C1;
-  font-style: bold;
-} */ 

@@ -25,7 +25,7 @@ function Resources() {
         <ul className="articles-list">
           <li className="article-item">
             <div className="article-item-container">
-              {/* <img src="https://www.supplychainquarterly.com/ext/resources/images/articles/2021/202112/SCQ21_Q4_notebook_ALANart.jpg?t=1639614291&width=600" alt="Image 1" /> */}
+              <img src="https://www.sahf.org/wp-content/uploads/2021/05/program_weaid.png"alt="Image 1" />
               <div className="article-item-content">
                 <h3 className="article-item-title">How to Prepare for a Disaster</h3>
                 {/* <p className="article-item-description">Disasters can strike at any time, and being prepared can make all the difference in keeping yourself and your loved ones safe. Here are some steps you can take to prepare for a disaster:</p> */}
@@ -41,7 +41,7 @@ function Resources() {
           </li>
           <li className="article-item">
             <div className="article-item-container">
-              {/* <img src="https://www.impact.upenn.edu/wp-content/uploads/2023/02/disaster-relife.jpg" alt="Image 2" /> */}
+              <img src="https://www.sahf.org/wp-content/uploads/2021/05/program_wepartner.png" alt="Image 2" />
               <div className="article-item-content">
                 <h3 className="article-item-title">What to Do After a Disaster</h3>
                 {/* <p className="article-item-description">After a disaster, there are several things you can do to stay safe and begin the process of recovery. Here are some steps you can take:</p> */}
@@ -57,6 +57,7 @@ function Resources() {
 </li>
 <li className="article-item">
 <div className="article-item-container">
+    <img src="https://www.sahf.org/wp-content/uploads/2021/05/program_wenourish.png" alt="Image 2" />
 <div className="article-item-content">
 <h3 className="article-item-title">How to Help After a Disaster</h3>
 {/* <p className="article-item-description">If you want to help those affected by a disaster, there are many ways you can contribute. Here are some options:</p> */}

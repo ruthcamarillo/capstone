@@ -26,11 +26,14 @@
   .footer h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    text-align: left;
+    color: #F1C40F;
   }
   
   .footer p {
     margin-bottom: 0.5rem;
     background-color: #173E76;
+    color:#F1C40F
 
   }
 
@@ -39,7 +42,7 @@
   }
   
   .footer-button {
-    background-color: #white;
+    background-color: white;
     color: black;
     padding: 0.5rem 1rem;
     border: none;

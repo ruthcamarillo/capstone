@@ -4,78 +4,41 @@ import './Contact.css';
 function Contact() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
-  const [availability, setAvailability] = useState('');
-  const [interest, setInterest] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  const handleSubmit = (e) => {
+    e.preventDefault();
     // handle form submission here
-  }
+  };
 
   return (
-    <main className="contact-container">
-        <h1>Contact Us</h1>
-    <form onSubmit={handleSubmit} className="contact-form">
-       
-      <div className="form-group">
+    <div className='Container-form'>
+      <h1>Contact Us</h1>
+      <form onSubmit={handleSubmit}>
         <label htmlFor="name">Name</label>
-        <input
-          type="text"
-          id="name"
-          value={name}
-          onChange={(event) => setName(event.target.value)}
-          required
-        />
-      </div>
-      <div className="form-group">
+        <input type="text" id="name" name="name" value={name} onChange={(e) => setName(e.target.value)} />
+
         <label htmlFor="email">Email</label>
-        <input
-          type="email"
-          id="email"
-          value={email}
-          onChange={(event) => setEmail(event.target.value)}
-          required
-        />
-      </div>
-      <div className="form-group">
-        <label htmlFor="phone">Phone Number</label>
-        <input
-          type="tel"
-          id="phone"
-          value={phone}
-          onChange={(event) => setPhone(event.target.value)}
-          required
-        />
-      </div>
-      <div className="form-group">
-        <label htmlFor="availability">Availability</label>
-        <input
-          type="text"
-          id="availability"
-          value={availability}
-          onChange={(event) => setAvailability(event.target.value)}
-          required
-        />
-      </div>
-      <div className="form-group">
-        <label htmlFor="interest">Interest</label>
-        <select
-          id="interest"
-          value={interest}
-          onChange={(event) => setInterest(event.target.value)}
-          required
-        >
-          <option value="">Select an option</option>
-          <option value="Option 1">Option 1</option>
-          <option value="Option 2">Option 2</option>
-          <option value="Option 3">Option 3</option>
+        <input type="email" id="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+
+        <label htmlFor="subject">Subject</label>
+        <select id="subject" name="subject" value={subject} onChange={(e) => setSubject(e.target.value)}>
+          <option value="">-- Select One --</option>
+          <option value="volunteer">Volunteering</option>
+          <option value="question">Question</option>
+          <option value="comment">Comment</option>
         </select>
-      </div>
-      <button type="submit">Submit</button>
-    </form>
-    </main>
+
+        <label htmlFor="message">Message</label>
+        <textarea id="message" name="message" value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
   );
 }
 
 export default Contact;
+
+

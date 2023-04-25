@@ -1,23 +1,51 @@
-.contact-form {
+
+.Container-form{
+  background-image: url(https://www.sahf.org/wp-content/uploads/2021/06/il_page_weempower.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: aliceblue;
+}
+
+  form {
     display: flex;
     flex-direction: column;
-    max-width: 400px;
-    margin: 0 auto;
-  }
-  
-  .form-group {
-    margin-bottom: 1rem;
+    width: 30%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
   label {
-    display: block;
-    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
   }
   
-  input[type="text"],
-  input[type="email"],
-  input[type="tel"],
-  select {
-    border: 2px solid #ccc;
-    border-radius: 4px
+  input,
+  select,
+  textarea {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
   }
+  
+  input[type="submit"] {
+    background-color:#173E76;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #d35400;
+  }
+  
