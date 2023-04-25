@@ -13,6 +13,7 @@ function Contact() {
   };
 
   return (
+<<<<<<< HEAD
     <div className='Container-form'>
   
       <h1>Contact Us</h1>
@@ -20,6 +21,14 @@ function Contact() {
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">Name</label>
         <input type="text" id="name" name="name" value={name} onChange={(e) => setName(e.target.value)} />
+=======
+    <div>
+      <h1>Contact Us</h1>
+      <div className="container">
+        <form action="action_page.php" method="POST">
+          <label htmlFor="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name.." />
+>>>>>>> 89cecdd3f4cf5a899c4ac4dc41e0b9ec77d75156
 
         <label htmlFor="email">Email</label>
         <input type="email" id="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} />
