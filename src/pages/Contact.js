@@ -1,16 +1,33 @@
 import React from 'react';
 import { BrowserRouter, Route, Link } from "react-router-dom";
 
-
 function Contact() {
+  return (
+    <div>
+      <h1>Contact Us</h1>
+      <div className="container">
+        <form action="action_page.php" method="POST">
+          <label htmlFor="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name.." />
 
-    return (
-        <div>
+          <label htmlFor="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name.." />
 
-            <h1>Contact</h1>
+          <label htmlFor="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
 
-        </div>
-    );
+          <label htmlFor="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style={{ height: "200px" }}></textarea>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+  );
 }
 
 export default Contact;

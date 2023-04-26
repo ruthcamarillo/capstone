@@ -7,6 +7,7 @@ import Layout from './pages/Layout';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import About from './pages/About';
+import Signup from './pages/Signup';
 import Resources from './pages/Resources';
 import Admin from './pages/Admin';
 import NoPage from './pages/NoPage';
@@ -23,8 +24,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="/admin" element={<Admin />} />
-          <Route path="/*" element={<NoPage />} />
-
+          <Route path="/signup" element={<Signup />} />
+          <Route path="*" element={<NoPage />} />
 
         </Route>
       </Routes>
