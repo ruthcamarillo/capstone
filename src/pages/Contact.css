@@ -1,107 +1,81 @@
 
-.Container-form{
-  background-image: url('../images/ocean.svg');
+
+.contact-form{
+  background-image: url('https://plantsta.files.wordpress.com/2020/07/contact-us.gif');
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-color: aliceblue; */
-}
-
-
-
-
-  form {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin: auto;
-    padding: 20px;
-    background-image: ;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
+  background-position: center;
+  opacity: 80%;
   
-  label {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  input,
-  select,
-  textarea {
-    font-size: 1rem;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    margin-bottom: 20px;
-  }
-  
-  input[type="submit"] {
-    background-color:#173E76;
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #d35400;
-  }
-  
-@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
-
-h1 {
-  font-family: 'Bungee', cursive;
-  padding: 2.5rem;
-  text-align: center;
-}
-
-.container {
-  margin: 20px;
-  background-color: #FFA07A;
-  /* burnt orange */
-  padding: 20px;
-  border-radius: 4px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-}
-
-form {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   align-items: center;
-}
-
-label {
-  margin: 10px 0;
-  font-weight: bold;
-}
-
-input[type="text"],
-select,
-textarea {
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
   width: 100%;
-  font-family: inherit;
+  max-width: 600px;
+  margin: 0 auto;
+  /* background-image: #f9f9f9; */
+  padding: 40px;
+  /* border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); */
 }
 
-input[type="submit"] {
-  background-color: #4CAF50;
-  color: white;
+form label {
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 10px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  /* border: none; */
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+h1{
+  color: red;
+}
+form textarea {
+  height: 150px;
+}
+
+form button[type='submit'] {
+  background-color: white;
+  color: #5f89bd;
   padding: 10px 20px;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
+  font-size: 1.2rem;
   cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.3s ease;
 }
 
-input[type="submit"]:hover {
-  background-color: #45a049;
+form button[type='submit']:hover {
+  background-color: blue;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .contact-form {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .contact-form {
+    max-width: 80%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .contact-form {
+    max-width: 70%;
+  }
 }
