@@ -26,7 +26,7 @@ function Resources() {
 
     <section className="articles-section">
         <div className="conatainer-res">
-          <h3 className="section-title">Disaster Preparedness Tips</h3>
+          <h2 className="section-title11">Disaster Preparedness Tips</h2>
           <div className="articles-grid">
             <div className="article-card">
               <img src="https://static.vecteezy.com/system/resources/previews/004/449/836/original/first-aid-kit-2d-isolated-illustration-paramedic-bag-doctor-supplies-medical-help-equipment-flat-composition-on-cartoon-background-emergency-situation-assistance-tools-colourful-scene-vector.jpg" alt="Article Image" className="article-image" />
@@ -60,7 +60,7 @@ function Resources() {
 
     
 
-<h2>Learn More About Organizations That Provide Relief Resources!</h2>
+<h2>Check Out These Resources That Provide Relief!</h2>
 <div class="news-card">
   <div class="news-content">
     <h3 class="news-title1">Habitat for Humanity  </h3>

@@ -1,11 +1,12 @@
 
 
 .contact-form{
-  background-image: url('https://plantsta.files.wordpress.com/2020/07/contact-us.gif');
+  background-image: url('../images/ocean.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   opacity: 80%;
+  padding: 10%;
   
   /* display: flex; */
   flex-direction: column;
@@ -27,10 +28,10 @@ form label {
 
 form input,
 form textarea {
-  width: 100%;
+  width: 98%;
   padding: 10px;
   margin-bottom: 20px;
-  /* border: none; */
+  border: none;
   border-radius: 5px;
   font-size: 1.1rem;
 }
