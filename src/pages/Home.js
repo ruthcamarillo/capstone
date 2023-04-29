@@ -1,16 +1,14 @@
 import React from 'react';
-<<<<<<< HEAD
+
 import { BrowserRouter, Route, Link } from "react-router-dom";
-// import Slider from '../components/Slider';
+import Mission from '../components/Mission';
 import Info from '../components/Pageinfo';
 import Earth from '../components/Earth';
-=======
-// import { useState } from 'react';
-import './Contact.css';
-// import Popup from '../components/Popup';
 
 
->>>>>>> main
+
+
+
 
 function Home() {
 
@@ -18,16 +16,14 @@ function Home() {
     return (
         <div>
 
-            <h1>HOME</h1>
-<<<<<<< HEAD
+            <h1></h1>
+
             <Earth />
+            {/* <Mission /> */}
             <Info />
-        {/* <Slider /> */}
-=======
+            <Mission />
+       
 
-
-
->>>>>>> main
         </div>
     );
 }

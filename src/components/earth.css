@@ -6,22 +6,21 @@
 }
 
 body {
-	display: flex;
-	justify-content: right;
-    margin-left: -20%;
-	align-self: center;
-	height: 100vh;
-	/* background: rgb(2, 0, 34); */
+    position: relative;
     background: #032754;
 }
+.contain{
+height: 700px;
+transform: translateY(-30px);
+}
 
-#earth {
+#earth-c {
 	position: relative;
 	width: 500px;
 	height: 500px;
 	border-radius: 50%;
-    right: -40%;
-    top: 390px;
+    right: -60%;
+    top: 90px;
 	background: transparent url("https://i.imgur.com/Qk4UXcU.png");
 	background-size: cover;
 	box-shadow: inset 0px -20px 50px 10px #00ffff80,
@@ -44,37 +43,55 @@ body {
 .title-container1{
     position: absolute;
     width: 40%;
-    height: auto;
-    top: 40%;
-    left: 4%;
+    min-height: auto;
+    top: 50%;
+    left: 8%;
     transform: translateY(-50%);
+}
+
+.title-5{
+    color: rgb(231, 231, 231);
+    padding: 0 2rem;
+   
+}
+.heading-5{
+    text-transform: uppercase;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 300;
+    font-style: white; 
     
 }
 
-.title{
-    color: rgb(231, 231, 231);
-    padding: 0 2rem;
-}
-.h1{
-    text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    font-style: white;
-    display: flex;
-    justify-content: center;
-}
-
-.p{
-    text-align: justify;
-    font-family: 'Poppins', sans-serif;
+.parag-5{
+    font-family: 'Urbanist', sans-serif;
     font-weight: 400;
     color: white;
-    width: 85%;
-    margin-left: 1rem auto;
-    margin-right: auto;
+    top: 20%;
+    right: -60%;
 }
 
-.picture{
-    height: 400px;
-    width: 400px;
+.picture-c{
+    height: 300px;
+    width: 300px;
+    right: -20%; 
+}
+.button{
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 140px;
+    background: #81ecec;
+    font-size: 15px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button:hover{
+    cursor: pointer;
+    background: #81ecec;
+    box-shadow: 0 0 5px #81ecec,
+                0 0 20px #81ecec,
+                0 0 60px #81ecec,
+                0 0 150px #81ecec;
 }
