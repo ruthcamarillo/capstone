@@ -16,7 +16,7 @@ function Navbar() {
             <nav>
                 <ul>
                     <li class="nav-item">
-                        <Link to="/">Home</Link>
+                        <Link to="/home">Home</Link>
                     </li>
 
                     <li class="nav-item">
@@ -31,9 +31,7 @@ function Navbar() {
 
                     <li class="nav-item"> <a> <Link to="/Signup">Volunteer</Link> </a> </li>
 
-                    <button onClick={() => setButtonPopup(true)}>Log In</button>
-                    <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
-                    </Popup>
+                    <li class="nav-item"> <a> <Link to="/register">Register</Link> </a> </li>
 
                 </ul>
             </nav>

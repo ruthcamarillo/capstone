@@ -1,5 +1,5 @@
 .footer {
-  background-color: #2e5061;
+  background-color: #052548;
   color: #F5F6FA;
   padding: 2rem;
   display: flex;
@@ -36,8 +36,8 @@
 }
 
 .footer-button:hover {
-  background-color: #D35400;
-  color: #F1C40F;
+  background-color: #4ec8f4;
+  color: #F5F6FA;
 }
 
 .footer-social {
