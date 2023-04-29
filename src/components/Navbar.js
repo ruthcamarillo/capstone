@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import '../styles/NavBar.css'
 import { Link } from "react-router-dom";
@@ -9,8 +10,6 @@ function Navbar() {
     const [buttonPopup, setButtonPopup] = useState(false);
 
     return (
-
-
         <div className="nav nav-container">
             <div className="logo"><Link to="/"><img src="/logo.png" alt="logo" class="logo"></img></Link></div>
             <nav>

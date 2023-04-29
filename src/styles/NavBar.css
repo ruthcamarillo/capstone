@@ -1,10 +1,13 @@
 * {
+    margin: 0;
+    padding: 0;
   margin: 0;
   padding: 0;
 }
 
 /* Logo stuff */
 .logo {
+
   position: absolute;
   top: 0;
   left: 0;
@@ -63,6 +66,44 @@ nav li a:hover {
 @media screen and (max-width: 900px) {
   .logo {
     display: none;
+=======
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.3rem;
+  }
+  
+  .logo img {
+    height: 5rem;
+    width: auto;
+    border-radius: 20%;
+  }
+  
+  .logo:hover {
+    color: beige;
+  }
+  
+  /* Navigation */
+  .nav-container {
+    background-color: #D35400;
+    background-color: #2e5061;
+    color: #F5F6FA;
+    padding: 2.3rem;
+    position: relative;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+
   }
 
   nav li {
