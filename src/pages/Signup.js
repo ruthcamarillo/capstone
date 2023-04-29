@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import './Signup.css';
 
 function Signup() {
@@ -9,11 +10,7 @@ function Signup() {
   const [interest, setInterest] = useState('');
   const [showConfirmation, setShowConfirmation] = useState(false);
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // handle form submission here
-    setShowConfirmation(true);
-  };
+
 
   return (
     <div className="signup-container5">
