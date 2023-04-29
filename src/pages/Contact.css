@@ -1,7 +1,7 @@
 
 
 .contact-form{
-  background-image: url('../images/ocean.svg');
+  background-image: url('../images/svg1.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -21,7 +21,7 @@
 }
 
 form label {
-  font-size: 2rem;
+  font-size: 1rem;
   color: black;
   margin-bottom: 10px;
 }
@@ -75,8 +75,7 @@ form button[type='submit']:hover {
   }
 }
 
-@media screen and (min-width: 992px) {
+/* @media screen and (min-width: 992px) {
   .contact-form {
-    max-width: 70%;
-  }
-}
+    /* max-width: 70%; */
+  
