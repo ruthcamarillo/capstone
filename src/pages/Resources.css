@@ -1,14 +1,17 @@
-/* Resources.css */
 
 /* Hero section */
 .hero-section {
     height: 400px;
-background-color: white;
+/* background-color: white; */
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    background-image: url(https://usa.humanityfirst.org/wp-content/uploads/2018/11/Disaster-Relief-Garland-Texas.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10%;
   }
   
   /* Overlay on top of hero image */
@@ -21,63 +24,234 @@ background-color: white;
     background-color: white;
   }
   
-  Header
+
+/* resources Header */
+
+
+
+h1.resources-header{
+  color: white;
+}
+
+
+  /* Header */
   .resources-header {
-    text-align: center;
-    font-size: 2.5rem;
+    text-align: left;
+  
     margin-top: 50px;
-    margin-bottom: 50px;
+margin-bottom: 600px;
   }
   
-  /* Articles section */
+  /* Articles Section lines 46-111 Keep Code*/
+  h2.section-title{
+    text-align: center;
+
+  }
+h2.articles-section{
+  padding: 5%;
+}
+  .articles-section {
+    background-color: #032754;
+    padding: 50px 0;
+  }
+  .section-title11{color: white;
+    padding: 5%;
+
+  }
 
 
-/* Article section styles */
-.article-section {
-  max-width: 800px;
+  .articles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-top: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+  .article-card {
+    background-color: #173E76;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .article-card:hover {
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  }
+  
+  .article-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .article-content {
+    padding: 20px;
+  }
+  
+  .article-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  h3.article-title{
+    color: aliceblue;
+  }
+  
+  .article-text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .article-link {
+    display: inline-block;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .article-link:hover {
+    background-color: #0062cc;
+  }
+  
+/* End of Articles Section lines 46-111 Keep Code*/
+
+.images-section4 {
+  background-color: aliceblue;
+  padding: 50px 0;
+  padding: 10%;
+}
+
+.conatainer-res4 {
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 20px;
+  text-align: center;
 }
 
-.article-item {
-  margin-bottom: 40px;
+.section-title4 {font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  }
+  
+  .images-grid4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  }
+  
+  .image4 {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media screen and (max-width: 768px) {
+  .images-grid4 {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  }
+
+
+
+
+
+
+/* Resource News Article */
+.news-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px;
+  padding: 15%;
+  /* border: 1px solid #ccc; */
 }
 
-.article-item-content {
-  padding: 20px;
- 
-  box-shadow: 0px 2px 6px rgba(255, 74, 3, 0.912);
-}
-
-.article-item-title {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.article-item-description {
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-
-.article-item-description li {
-  margin-bottom: 10px;
-}
-
-
-/* Float Images Keep This  */
-.article-item-container {
-  overflow: auto;
-  padding: 20px;
-}
-
-.article-item-container img {
-  float: left;
+.news-content {
+  flex: 1;
   margin-right: 20px;
-  max-width: 100%;
 }
 
-.article-item-content {
-  margin-left: 160px;
+.news-image-container {
+  flex: 0 0 40%;
+}
+
+.news-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 10px 10px lightblue;
+}
+
+p.news-text{
+  text-align: left;
+  text-decoration:wavy;
+ 
+}
+
+h3{
+  text-align: center;
+}
+
+/* 2nd News Section */
+.news-card1 {
+  display: flex;
+  /* flex-direction: row-reverse;  */
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px;
+  padding: 10%;
+  background-color:#032754 ;
+  /* border: 1px solid #ccc; */
+}
+
+.news-content1 {
+  flex: 0 0 60%; /* adjust the flex basis to be wider */
+  margin-left: 20px; /* adjust the margin to be on the left */
+}
+
+.news-image-container1 {
+  flex: 0 0 40%;
+}
+
+.news-image1 {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 10px 10px lightblue;
+}
+
+p.news-text1 {
+  text-align: left;
+  text-decoration: wavy;
+  color: white;
+  /* text-transform: uppercase; */
+}
+h3.news-title1{
+  color: white;
+}
+
+h3.news-title23{
+  color: white;
+}
+
+
+h2 {
+  text-align: center;
+  padding: 5%;
 }
 
 
@@ -85,141 +259,19 @@ background-color: white;
 
 ul {
   list-style: none;
+ 
+
 }
 
-
-
-
-
-/*   
-  Videos section */
-
-  .videos-container {
-    margin-top: 50px;
-  }
-  
-  .videos-header {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 25px;
-  }
-  
-  .video-wrapper {
-    position: sticky;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%; 
-    display: flex;
-    justify-content: center;
-  }
-  
-  .video-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
-
-
-
-
-  /* Volunteer section */
-  .volunteer-container {
-    margin-top: 50px;
-  }
-  
-  .volunteer-header {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 25px;
-  }
-  
-  .volunteer-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 50px;
-    /* border-color: red; */
-  }
-  
-
-  .volunteer-input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 25px;
-    border: none;
-    /* border-bottom: 2px solid yellow; */
-    font-size: 1rem;
-  }
-  
-  .volunteer-textarea {
-    width: 100%;
-    height: 150px;
-    padding: 10px;
-    margin-bottom: 25px;
-    border-color: black;
-    border-bottom: 2px solid black;
-    font-size: 1rem;
-  }
-  
-  .volunteer-button {
-    padding: 10px 20px;
-    background-color: #F1C40F;
-    color: #fff;
-    border: none;
-    font-size: 1.25rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-align: center;
-  }
-  
-  .volunteer-button:hover {
-    background-color: black;
-  }
-/*   
-  Donate section */
-
-  /* h2 {
-    color:#F1C40F;
-    
-  }
-  .donate-container {
-    margin-top: 50px;
-  }
-  
-  .donate-header {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 25px;
-  }
-  
-  .donate-paragraph {
-    font-size: 1.25rem;
-    margin-bottom: 25px;
-    color: #F1C40F;
-  }
-  
-  .donate-button {
-    padding: 10px 20px;
-    background-color: orange;
-    color: #FFFFFF;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    margin-top: 20px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    }
-     */
   /* Animations */
 
-.hero-image {
+.hero-image3{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    animation: slideIn 1s forwards;
+    animation: slideIn 2s forwards;
+    background-image: url(https://www.gannett-cdn.com/experiments/usatoday/gifs/tool/1490-ShelteratHome.gif);
+    background-repeat: no-repeat;
     }
     
     @keyframes slideIn {
@@ -267,34 +319,8 @@ ul {
     }
     }
     
-    .volunteer-label {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-top: 20px;
-    color: #ccc;
-    }
-    
-    .volunteer-input {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    width: 100%;
-    
-    }
-    
-    .volunteer-textarea {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    width: 100%;
-    height: 150px;
-    color: black;
-    }
-    
-    
-    
+ /* Media Queries
+     */
     @media (min-width: 768px) {
     .resources-container {
     /* display: flex; */
@@ -304,7 +330,7 @@ ul {
 }
     .hero-section {
     flex-basis: 50%;
-    height: 100vh;
+    height: 80vh;
     position: relative;
     overflow: hidden;
     }
@@ -314,10 +340,7 @@ ul {
     flex-basis: calc(50% - 40px);
     }
     
-    .videos-container {
-        background-color:white;
-    flex-basis: calc(50% - 40px);
-    }
+    
     
     .donate-container {
         background-color: black;
@@ -327,8 +350,8 @@ ul {
     
     .articles-list {
     display: flex;
-    flex-direction: column;
-    padding-left: 0;
+   
+    padding-left: 10%;
     }
     
     .article-item {
@@ -346,194 +369,12 @@ ul {
     .article-item a:hover {
     color: orange;
     } 
-    
-    .videos-header,
-    .volunteer-header,
+   
+    /* .volunteer-header,
     .donate-header {
     margin-top: 50px;
-    }  
+    }   */
 
   
 
 
-/* 
-    Fix this Code 
-    info section
-.res-info-container{
-  background-color:  #608499;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.info{
-  background-color: #608499;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(1, 1fr);
-  justify-items: center;
-  padding: 50px;
-}
-
-.info-video{
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
-  flex-direction: column; 
-  align-content: stretch;
-}
-
-.info-text{
-  display: flex;
-  align-items: center;
-  flex-direction: column; 
-  align-content: stretch;
-  color:white;
-  padding: 30px;
-}
-
-.info-text h2{
- text-align: center;
- letter-spacing: 1px;
- font-size: 20px;
- font-weight: bold;
- margin-bottom: 30px;
-}
-
-.info-text p{
-  text-align: center;
-  font-size: 15px;
-}
-
-.info-text button{
-  padding: 10px;
-  margin-top: 10px;
-  border: none;
-  background-color: #5CB3C1;
-  color: white;
-  border-radius: 3px;
-}
-
-.info-text button:hover{
-  background-color: white;
-  color: rgb(26, 25, 25);
-}
-
-/* get-involved */
-/* .res-getInvolved-container{
-  background-color: rgb(255, 255, 255);
-}
-
-.res-getInvolved-header{
-  background-image: url('/img/res-solutions.jpeg');
-  background-attachment: static;
-  background-size: cover;
-  height: 300px;
-  margin: 10px;
-}
-
-.res-getInvolved-container h3{
-  color: rgb(56, 52, 52);
-  text-align: center;
-  font-size: 50px;
-  letter-spacing: 1px;
-}
-
-.solutions{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(2, 1fr);
-  justify-items: center;
-  margin: 30px;
-}
-
-.solutions-text{
- margin: 30px;
- text-align: center;
- color: rgb(56, 52, 52);
-}
-
-.solutions-text img{
-  margin-left: 50px;
-}
-
-.quote-container h3{
-  background-image: url('/img/res-hero-img.jpeg');
-  background-attachment: fixed;
-  background-size: cover;
-  height: 300px;
-  margin: 10px;
-  padding: 125px;
-  text-align: center;
-  color: white;
-} */
-
-/* related articles */
-/* .res-resources-container{
-  background-color: rgb(255, 255, 255);
-}
-
-.res-resources-container h3{
-  text-align: center;
-  font-size: 25px;
-  letter-spacing: 2px;
-}
-
-.resources{
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(2, 1fr);
-  justify-items: center;
-  margin: 10px 30px;
-}
-
-.articles:hover{
--webkit-transform: scale(1.1);
--ms-transform: scale(1.1);
-transform: scale(1.1);
-transition: 1s ease;
-}
-
-.articles{
-  background-color: rgb(26, 26, 26);
-  margin-bottom: 30px;
-  text-align: left;
-  color: white;
-  margin: 10px 30px;
-  padding-bottom: 30px;
-  margin-bottom: 50px;
-}
-
-.articles img{
-  width: 100%;
-}
-
-.articles h4{
-  margin-top: 10px;
-  font-size: 15px;
-  padding-left: 20px;
-  color: gray;
-}
-
-.articles p{
-  padding-left: 20px;
-  padding-right: 20px;
-  font-size:12px;
-  margin-bottom: 30px;
-  margin-top: 30px;
-}
-
-.articles a{
-text-decoration: none;
-font-size: 15px;
-padding-left: 20px;
-padding-right: 20px;
-color: white;
-text-align: left;
-display: block;
-}
-
-.articles a:hover{
-  text-decoration: underline;
-  color: #5CB3C1;
-  font-style: bold;
-} */ 
