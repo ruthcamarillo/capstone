@@ -9,6 +9,35 @@ import ruthimg from "../images/ruth.png"
 import adriannimg from "../images/adriann.png"
 import breimg from "../images/bre.png"
 import jorgeimg from "../images/PicOfMe.png"
+import SearchBar from "../components/Card";
+import Card from "../components/Card";
+
+// const CardData = [
+//   {
+//     "id": 1,
+//     "title": "title one",
+//     "description": "description one",
+//     "image": "image one"
+//   },
+//   {
+//     "id": 2,
+//     "title": "title two",
+//     "description": "description two",
+//     "image": "image two"
+//   },
+//   {
+//     "id": 3,
+//     "title": "title three",
+//     "description": "description three",
+//     "image": "image three"
+//   },
+//   {
+//     "id": 4,
+//     "title": "title four",
+//     "description": "description four",
+//     "image": "image four"
+//   },
+// ];
 
 function About() {
 
@@ -77,8 +106,6 @@ I am eager to continue my learning and grow as a software engineer to be able to
       {/* <SearchBar data={Card} /> */}
 
       {/* <Card data ={Card} /> */}
-
-    </div>
   );
 }
 
