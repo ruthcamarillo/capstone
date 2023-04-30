@@ -1,26 +1,32 @@
 * {
+    text-decoration: none;
+}
+
+.allnav {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'poppins', sans-serif;
     text-decoration: none;
     list-style: none;
 }
 
-:root{
-    --bg-color: #2e5061;
-    --text-color: #ECEDEF;
-    --main-color: #8CDFFD;
+:root {
+    --bg-color: #062750;
+    --text-color: #fff;
+    --main-color: #8cdffd;
 }
 
-body {
-    min-height: 100vh;
+.navBar {
+    min-height: 20vh;
     background: var(--bg-color);
     color: var(--text-color);
+    border-radius: 10px;
+    /* position: relative; */
 }
 
-.header {
-    position: fixed;
+.headerr {
+    position: absolute;
     width: 100%;
     top: 0;
     right: 0;
@@ -29,40 +35,39 @@ body {
     align-items: center;
     justify-content: space-between;
     background: transparent;
-    padding: 20px 8%;
+    padding: 28px 12%;
+    list-style: none;
     transition: all .50s ease;
 }
 
 .logo {
-/* .navtxt { */
+    /* position: fixed; */
     display: flex;
     align-items: center;
-    border-radius: 10%;
-    min-width: 60px;
-    width: 4.5rem;
+    width: 100px;
+    padding-left: 100px;
     height: auto;
+    border-radius: 10px;
 }
 
 .logo i {
-    /* .navtxt{ */
     color: var(--main-color);
     font-size: 28px;
     margin-right: 3px;
-    /* border-radius: 20%; */
 }
 
-/* .logo span {
+
+.logo span {
     color: var(--text-color);
     font-size: 1.7rem;
     font-weight: 6000;
-} */
+}
 
 .navbar {
     display: flex;
 }
 
-/* .navbar a { */
-.navtxt{
+.navbar a {
     color: var(--text-color);
     font-size: 1.1rem;
     font-weight: 500;
@@ -84,8 +89,7 @@ body {
     align-items: center;
 }
 
-/* .main a { */
-.popup{
+.main a {
     margin-right: 25px;
     margin-left: 10px;
     color: var(--text-color);
@@ -128,14 +132,15 @@ body {
         margin: 0px 20px;
     }
 }
-
+/* what is dialogflow */
 @media (max-width: 1090px) {
     #menu-icon {
         display: block;
     }
+
     .navbar {
         position: absolute;
-        top: 100%;
+        top: 85%;
         right: -100%;
         width: 270px;
         height: 255px;
@@ -146,12 +151,14 @@ body {
         border-radius: 10px;
         transition: all .50s ease;
     }
+
     .navbar a {
         display: block;
         margin: 12px 0;
         padding: 0px 25px;
         transition: all .50s ease;
     }
+
     .navbar a:hover {
         color: var(--text-color);
         transform: translateY(-4px);
@@ -160,6 +167,6 @@ body {
         color: var(--text-color);
     }
     .navbar.open{
-        right: 2%;
+        right: 1.5%;
     }
 }
