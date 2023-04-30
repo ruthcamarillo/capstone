@@ -111,7 +111,10 @@ function Contact() {
       </div>
       <button type="submit">Send</button>
     </form>
+    </div>
+    </div>
   );
 }
+
 
 export default Contact;

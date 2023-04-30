@@ -72,7 +72,7 @@ nav li a:hover {
     left: 0;
     padding: 0.3rem;
   }
-
+}
   .logo img {
     height: 5rem;
     width: auto;
@@ -153,4 +153,4 @@ nav li a:hover {
   nav li {
     margin-left: 0.5rem;
   }
-  
+}
