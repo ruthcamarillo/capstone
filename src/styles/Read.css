@@ -1,0 +1,23 @@
+.main {
+    display: flex;
+    justify-content: center;
+
+}
+
+.cards {
+
+    max-width: 250rem;
+    margin: 5rem;
+
+
+}
+
+.minicard {
+    display: flex;
+    align-items: center;
+}
+
+.card_img {
+
+    max-width: 350px;
+}
