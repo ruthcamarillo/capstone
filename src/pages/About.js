@@ -106,6 +106,7 @@ I am eager to continue my learning and grow as a software engineer to be able to
       {/* <SearchBar data={Card} /> */}
 
       {/* <Card data ={Card} /> */}
+      </div>
   );
 }
 
