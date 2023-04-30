@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import Axios from 'axios';
 import './Contact.css'
@@ -61,6 +62,8 @@ function Contact() {
 
   // Render the contact form
   return (
+    <div>
+      <div className="container">
     <form onSubmit={handleSubmit} className="contact-form">
       <div>
         <h1>Contact Us!</h1>
