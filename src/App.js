@@ -13,6 +13,7 @@ import Signup from './pages/Signup';
 import Resources from './pages/Resources';
 import Admin from './pages/Admin';
 import Register from './pages/Register';
+import Read from './pages/Read';
 import NoPage from './pages/NoPage';
 
 export const AppContext = React.createContext();
@@ -32,6 +33,7 @@ function App() {
           <Route path="/admin" element={<Admin />} />
           <Route path="/Signup" element={<Signup />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/read" element={<Read />} />
           <Route path="*" element={<NoPage />} />
 
         </Route>

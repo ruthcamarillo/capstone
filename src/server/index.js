@@ -63,23 +63,29 @@ app.post('/login', (req, res) => {
     });
 });
 
-app.post('/Signup', async (req, res) => {
-    const { name, email, phone, interest } = req.body;
-    console.log(`New Contact Form submission: ${name}, ${email}, ${phone}, ${interest}`);
-    try {
-        const conn = await db.getConnection();;
-        const [rows, fields] = await conn.execute(
-            'INSERT INTO volunteer_signups (volunteer_name, email, phone, interest) VALUES (?, ?, ?, ?)',
-            [volunteer_name, email, phone, interest]
-        );
-        console.log(`Inserted ${rows.affectedRows} row(s)`);
-        conn.release();
-        res.send('Thanks for contacting us!');
-    } catch (err) {
-        console.error(err);
-        res.status(500).send('Internal Server Error');
-    }
+app.post('/Signup', (req, res) => {
+    const volunteer = req.body;
+    const email = volunteer.email;
+
+    // look up user by email to get user_id
+    const userQuery = `SELECT id FROM users WHERE email = '${email}'`;
+    connection.query(userQuery, (err, results) => {
+        if (err) {
+            console.log(err);
+        } else {
+            const userId = results[0].id;
+            const volunteerQuery = `INSERT INTO volunteer_signup (volunteer_name, email, phone_number, interests, over18, user_id) VALUES ('${volunteer.volunteer_name}', '${volunteer.email}', '${volunteer.phone_number}', '${volunteer.interests}', '${volunteer.over18}', '${userId}')`;
+            connection.query(volunteerQuery, (err, results) => {
+                if (err) {
+                    console.log(err);
+                } else {
+                    res.send('Volunteer signup successful!');
+                }
+            });
+        }
+    })
 });
+
 
 // app.post('/register', (req, res)=>{
 //     const name = req.body.name;
@@ -127,19 +133,33 @@ app.post('/register', (req, res) => {
     });
 });
 
+app.post('/contact', (req, res) => {
+    const { name, email, subject, message } = req.body;
 
-app.get('/admin', (req, res) => {
-    const sql = 'SELECT * FROM volunteer_signups';
+    const insertContact = `INSERT INTO contact (name, email, subject, message) VALUES (?, ?, ?, ?)`;
+    const contactValues = [name, email, subject, message];
 
-    connection.query(sql, (err, results) => {
+    connection.query(insertContact, contactValues, (err, result) => {
         if (err) {
-            console.error(err);
-            res.status(500).send('Internal Server Error');
+            console.error('Error inserting data into contact table:', err);
+            res.status(500).send('Internal server error!');
         } else {
-            res.status(200).json(results);
+            console.log(`Contact data inserted successfully!`);
+            res.status(200).send('Contact data inserted successfully!');
         }
     });
 });
+
+app.get('/admin', (req, res) => {
+    connection.query('SELECT * FROM volunteer_signup', (err, results) => {
+        if (err) {
+            console.log(err);
+            return res.sendStatus(500);
+        }
+        res.render('admin', { data: results });
+    });
+});
+
 
 const port = 3001;
 // start the server

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+import Axios from 'axios';
 import './Signup.css';
 
 function Signup() {
@@ -10,6 +10,23 @@ function Signup() {
   const [interest, setInterest] = useState('');
   const [showConfirmation, setShowConfirmation] = useState(false);
 
+  function handleSubmit(event) {
+    event.preventDefault(); // prevent the form from reloading the page
+    Axios.post('http://localhost:3001/Signup', {
+      volunteer_name: name,
+      email: email,
+      phone_number: phone,
+      over18: over18,
+      interests: interest
+    })
+      .then(response => {
+        console.log(response.data);
+        setShowConfirmation(true);
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  }
 
 
   return (
@@ -49,7 +66,7 @@ function Signup() {
         <section className="form-section2">
           <h2 className="form-title2">Sign Up to Help With Disaster Relief!</h2>
           {/* <form onSubmit={handleSubmit} className="form2"> */}
-          <form className="form2">
+          <form onSubmit={handleSubmit} className="form2">
             <div className="form-group2">
               <label htmlFor="name2" className="form-label2">
                 Name
