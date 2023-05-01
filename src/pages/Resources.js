@@ -29,7 +29,7 @@ function Resources() {
           <h2 className="section-title11">Disaster Preparedness Tips</h2>
           <div className="articles-grid">
             <div className="article-card">
-              <img src="https://static.vecteezy.com/system/resources/previews/004/449/836/original/first-aid-kit-2d-isolated-illustration-paramedic-bag-doctor-supplies-medical-help-equipment-flat-composition-on-cartoon-background-emergency-situation-assistance-tools-colourful-scene-vector.jpg" alt="Article Image" className="article-image" />
+              <img src="https://media4.giphy.com/media/8YlAi49mAXq7d3jKUQ/giphy-downsized.gif" alt="Article Image" className="article-image" />
               <div className="article-content">
                 <h3 className="article-title">How to Prepare for a Disaster</h3>
                 <p className="article-text">Learn how to create an emergency plan, build an emergency kit, stay informed, protect your property, and practice your plan.</p>
@@ -47,7 +47,7 @@ function Resources() {
             </div>
 
             <div className="article-card">
-              <img src="https://media.istockphoto.com/id/1263052067/vector/tsunami-consequences-rescue-male-female-character-evacuation-save-inflatable-boat-people.jpg?s=612x612&w=0&k=20&c=Q4ndN2BcqaK5thkGTFdbuxLYgZBI-tXTYf1Bx-XxUms=" alt="Article Image" className="article-image"  />
+              <img src="https://cdn.dribbble.com/users/1786581/screenshots/6597481/untitled-1.gif" alt="Article Image" className="article-image"  />
               <div className="article-content">
                 <h3 className="article-title">How to Help After a Disaster</h3>
                 <p className="article-text">Learn how to donate goods, volunteer, and spread awareness to help those in need after a disaster.</p>
@@ -63,7 +63,7 @@ function Resources() {
 <h2>Check Out These Resources That Provide Relief!</h2>
 <div class="news-card">
   <div class="news-content">
-    <h3 class="news-title1">Habitat for Humanity  </h3>
+    <h3 class="news-title">Habitat for Humanity  </h3>
     <p class="news-text">
     Habitat for Humanity is a non-profit organization that aims to provide affordable housing solutions for families and individuals in need. The organization works by partnering with these families and individuals, providing them access to financing, materials, and volunteer labor to help build or repair homes.
  </p>
