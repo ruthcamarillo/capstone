@@ -2,7 +2,7 @@
 import './App.css';
 
 import React from 'react';
-// import Timmy from './components/Timmy';
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './pages/Layout';
 import LoginPage from './pages/LoginPage';
