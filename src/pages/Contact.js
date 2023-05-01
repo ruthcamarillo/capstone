@@ -59,6 +59,7 @@ function Contact() {
 
   // Render the contact form and submission status message
   return (
+
     <>
       {submissionStatus === 'success' && (
         <p className="confirmation2">Hey {name}, Your message was sent successfully! Thank you for talking with us!</p>

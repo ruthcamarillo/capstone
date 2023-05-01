@@ -25,10 +25,10 @@ function Info() {
                         <img src="https://i0.wp.com/publicintegrity.org/wp-content/uploads/2020/04/AP_19282564397986.jpg?fit=1200%2C774&ssl=1" class="card-img" alt=""></img>
                         <div class="info">
                             <h2>Why are we here</h2>
-                            <p>People help clean up after natural disasters because they recognize the immense impact that these events can have on communities and the individuals affected by them. Natural disasters
+                            {/* <p>People help clean up after natural disasters because they recognize the immense impact that these events can have on communities and the individuals affected by them. Natural disasters
 //                  can leave a trail of destruction and debris, making it difficult for those affected to recover and return to their daily lives. By helping to clean up, individuals can make a meaningful
 //                   contribution towards restoring normalcy and providing much-needed support. Additionally, volunteering for clean-up efforts can provide individuals with a sense of purpose, community
-//                    involvement, and the opportunity to make a positive impact in the lives of others.</p>
+//                    involvement, and the opportunity to make a positive impact in the lives of others.</p> */}
 
                         </div>
                     </div>
