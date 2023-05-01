@@ -32,6 +32,16 @@ connection.connect(err => {
 // parse incoming requests with JSON payloads
 app.use(bodyParser.json());
 
+app.get('/admin', (req, res) => {
+    connection.query('CALL getVolunteerSignupsWithUsers()', (err, results) => {
+        if (err) {
+            console.log(err);
+            return res.sendStatus(500);
+        }
+        res.send(results[0]);
+    });
+});
+
 // this is to post the log in info to my database
 app.post('/login', (req, res) => {
     const { email, password, name } = req.body; // Add 'name' to the destructuring
@@ -150,15 +160,7 @@ app.post('/contact', (req, res) => {
     });
 });
 
-app.get('/admin', (req, res) => {
-    connection.query('CALL getVolunteerSignupsWithUsers()', (err, results) => {
-        if (err) {
-            console.log(err);
-            return res.sendStatus(500);
-        }
-        res.send(results[0]);
-    });
-});
+
 
 
 const port = 3001;
