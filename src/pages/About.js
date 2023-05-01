@@ -9,8 +9,8 @@ import ruthimg from "../images/ruth.png"
 import adriannimg from "../images/adriann.png"
 import breimg from "../images/bre.png"
 import jorgeimg from "../images/PicOfMe.png"
-import SearchBar from "../components/Card";
-import Card from "../components/Card";
+// import SearchBar from "../components/Card";
+// import Card from "../components/Card";
 
 // const CardData = [
 //   {
