@@ -9,6 +9,7 @@ import LoginPage from './pages/LoginPage';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import About from './pages/About';
+// import About2 from './pages/About2';
 import Signup from './pages/Signup';
 import Resources from './pages/Resources';
 import Admin from './pages/Admin';
