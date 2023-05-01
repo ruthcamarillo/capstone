@@ -14,17 +14,23 @@ function Admin() {
     return (
         <div className="adminForms">
             <h1>Volunteer Signups</h1>
-            {volunteerSignups.map(signup => (
-                <div key={signup.id} className="volunteer-signup">
-                    <p><strong>ID:</strong> {signup.id}</p>
-                    <p><strong>Name:</strong> {signup.volunteer_name}</p>
-                    <p><strong>Email:</strong> {signup.email}</p>
-                    <p><strong>Phone Number:</strong> {signup.phone_number}</p>
-                    <p><strong>Interests:</strong> {signup.interests}</p>
-                    <p><strong>Over 18:</strong> {signup.over18}</p>
-                    <p><strong>User ID:</strong> {signup.user_id}</p>
-                </div>
-            ))}
+            <div className="adminsection">
+                {volunteerSignups.map(signup => (
+                    <div key={signup.id} className="volunteer-signup">
+                        <p><strong>ID:</strong> {signup.id}</p>
+                        <p><strong>Name:</strong> {signup.volunteer_name}</p>
+                        <p><strong>Email:</strong> {signup.email}</p>
+                        <p><strong>Phone Number:</strong> {signup.phone_number}</p>
+                        <p><strong>Interests:</strong> {signup.interests}</p>
+                        <p><strong>Over 18:</strong> {signup.over18}</p>
+                        <p><strong>User ID:</strong> {signup.user_id}</p>
+                        <p><strong>User Name:</strong> {signup.user_name}</p>
+                        <p><strong>User Email:</strong> {signup.user_email}</p>
+
+                    </div>
+
+                ))}
+            </div>
         </div>
     );
 }
