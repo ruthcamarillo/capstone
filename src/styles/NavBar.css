@@ -90,12 +90,12 @@ nav li a:hover {
     padding: 2.3rem;
     position: relative;
   }
-  
+
   nav {
     display: flex;
     justify-content: flex-end;
   }
-  
+
   nav ul {
     list-style: none;
     margin: 0;
@@ -103,21 +103,21 @@ nav li a:hover {
     display: flex;
     align-items: center;
   }
-  
+
   nav li {
     margin-left: 1.5rem;
   }
-  
+
   .logo img {
     height: 5rem;
     width: auto;
     border-radius: 20%;
   }
-  
+
   .logo:hover {
     color: beige;
   }
-  
+
   /* Navigation */
   .nav-container {
     background-color: #D35400;
@@ -131,16 +131,16 @@ nav li a:hover {
     display: flex;
     justify-content: flex-end;
   }
-  
-  @media screen and (max-width: 900px) {
-    .logo {
-      display: none;
-    }
-  
-    nav li {
-      margin-left: 0.5rem;
-    }
+}
 
+@media screen and (max-width: 900px) {
+  .logo {
+    display: none;
+  }
+
+  nav li {
+    margin-left: 0.5rem;
+  }
   nav ul {
     list-style: none;
     margin: 0;
@@ -153,4 +153,5 @@ nav li a:hover {
   nav li {
     margin-left: 0.5rem;
   }
+}
 }

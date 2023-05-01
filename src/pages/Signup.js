@@ -3,12 +3,12 @@ import Axios from 'axios';
 import './Signup.css';
 
 function Signup() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
-  const [over18, setOver18] = useState('');
-  const [interest, setInterest] = useState('');
-  const [showConfirmation, setShowConfirmation] = useState(false);
+ const [name, setName] = useState('');
+ const [email, setEmail] = useState('');
+ const [phone, setPhone] = useState('');
+ const [over18, setOver18] = useState('');
+ const [interest, setInterest] = useState('');
+ const [showConfirmation, setShowConfirmation] = useState(false);
 
   function handleSubmit(event) {
     event.preventDefault(); // prevent the form from reloading the page
@@ -29,13 +29,11 @@ function Signup() {
   }
 
 
-  return (
-    <div className="signup-container5">
-      <header className="header">
-        <h1 className="title-signup">Volunteer Signup</h1>
-      </header>
-
-
+ return (
+   <div className="signup-container5">
+     <header className="header">
+       <h1 className="title-signup">Volunteer Signup</h1>
+     </header>
 
       <section className="safety-section">
         <div className="container">
@@ -151,20 +149,10 @@ function Signup() {
             </div>
           )}
         </section>
-
-
-
-
-
-
-
       </div>
     </div>
   );
 }
 
 export default Signup;
-
-
-
 

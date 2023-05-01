@@ -151,12 +151,12 @@ app.post('/contact', (req, res) => {
 });
 
 app.get('/admin', (req, res) => {
-    connection.query('SELECT * FROM volunteer_signup', (err, results) => {
+    connection.query('CALL getVolunteerSignupsWithUsers()', (err, results) => {
         if (err) {
             console.log(err);
             return res.sendStatus(500);
         }
-        res.render('admin', { data: results });
+        res.send(results[0]);
     });
 });
 
