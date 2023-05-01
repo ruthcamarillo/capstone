@@ -39,7 +39,7 @@ h1.resources-header{
     text-align: left;
   
     margin-top: 50px;
-margin-bottom: 600px;
+margin-bottom: 400px;
   }
   
   /* Articles Section lines 46-111 Keep Code*/
@@ -218,6 +218,10 @@ h3{
   /* border: 1px solid #ccc; */
 }
 
+h3.news-title12{
+  color: black;
+}
+
 .news-content1 {
   flex: 0 0 60%; /* adjust the flex basis to be wider */
   margin-left: 20px; /* adjust the margin to be on the left */
@@ -370,11 +374,5 @@ ul {
     color: orange;
     } 
    
-    /* .volunteer-header,
-    .donate-header {
-    margin-top: 50px;
-    }   */
-
   
-
 

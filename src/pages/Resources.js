@@ -22,6 +22,7 @@ function Resources() {
         </div>
 
 
+
         <section className="articles-section">
           <div className="conatainer-res">
             <h2 className="section-title11">Disaster Preparedness Tips</h2>
@@ -33,6 +34,27 @@ function Resources() {
                   <p className="article-text">Learn how to create an emergency plan, build an emergency kit, stay informed, protect your property, and practice your plan.</p>
                   <a href="https://www.ready.gov/kit?gclid=EAIaIQobChMIx8Wow4vL_gIV4vbjBx1_2g8QEAAYASAAEgJkCPD_BwE" className="article-link">Read More</a>
                 </div>
+    
+
+    <main className="resources-container">
+  
+    <div className="hero-section">
+    <h1 className="resources-header">Disaster Relief Resources</h1>
+      {/* <img src={heroimage3.gi} alt="Disaster Relief Fund" className="hero-image3" /> */}
+    </div>
+
+
+    <section className="articles-section">
+        <div className="conatainer-res">
+          <h2 className="section-title11">Disaster Preparedness Tips</h2>
+          <div className="articles-grid">
+            <div className="article-card">
+              <img src="https://media4.giphy.com/media/8YlAi49mAXq7d3jKUQ/giphy-downsized.gif" alt="Article Image" className="article-image" />
+              <div className="article-content">
+                <h3 className="article-title">How to Prepare for a Disaster</h3>
+                <p className="article-text">Learn how to create an emergency plan, build an emergency kit, stay informed, protect your property, and practice your plan.</p>
+                <a href="https://www.ready.gov/kit?gclid=EAIaIQobChMIx8Wow4vL_gIV4vbjBx1_2g8QEAAYASAAEgJkCPD_BwE" className="article-link">Read More</a>
+
               </div>
 
               <div className="article-card">
@@ -44,6 +66,7 @@ function Resources() {
                 </div>
               </div>
 
+
               <div className="article-card">
                 <img src="https://media.istockphoto.com/id/1263052067/vector/tsunami-consequences-rescue-male-female-character-evacuation-save-inflatable-boat-people.jpg?s=612x612&w=0&k=20&c=Q4ndN2BcqaK5thkGTFdbuxLYgZBI-tXTYf1Bx-XxUms=" alt="Article Image" className="article-image" />
                 <div className="article-content">
@@ -51,6 +74,14 @@ function Resources() {
                   <p className="article-text">Learn how to donate goods, volunteer, and spread awareness to help those in need after a disaster.</p>
                   <a href="How to Help After a Disaster" className="article-link">Read More</a>
                 </div>
+
+            <div className="article-card">
+              <img src="https://cdn.dribbble.com/users/1786581/screenshots/6597481/untitled-1.gif" alt="Article Image" className="article-image"  />
+              <div className="article-content">
+                <h3 className="article-title">How to Help After a Disaster</h3>
+                <p className="article-text">Learn how to donate goods, volunteer, and spread awareness to help those in need after a disaster.</p>
+                <a href="How to Help After a Disaster" className="article-link">Read More</a>
+
               </div>
             </div>
           </div>
@@ -74,6 +105,7 @@ function Resources() {
 
 
 
+
         <div class="news-card1">
           <div class="news-image-container1">
             <img src="https://better.net/chicago/wp-content/uploads/sites/2/2017/08/Rebuilding-Together.jpg" alt="News Image" class="news-image1" />
@@ -90,6 +122,44 @@ function Resources() {
         </div>
 
         {/* 
+
+      </section>
+
+    
+
+<h2>Check Out These Resources That Provide Relief!</h2>
+<div class="news-card">
+  <div class="news-content">
+    <h3 class="news-title">Habitat for Humanity  </h3>
+    <p class="news-text">
+    Habitat for Humanity is a non-profit organization that aims to provide affordable housing solutions for families and individuals in need. The organization works by partnering with these families and individuals, providing them access to financing, materials, and volunteer labor to help build or repair homes.
+ </p>
+    <a href="https://www.habitatcltregion.org/?gclid=EAIaIQobChMIpveyqIzL_gIVNvfjBx2gKQDbEAAYAiAAEgJLm_D_BwE" class="news-link">Read More</a>
+  </div>
+  <div class="news-image-container">
+    <img src="https://i0.wp.com/sammyapproves.com/wp-content/uploads/2021/10/Habitat-for-Humanity-MOB-small-6.gif" alt="News Image" class="news-image" />
+  </div>
+</div>
+
+
+
+<div class="news-card1">
+  <div class="news-image-container1">
+    <img src="https://better.net/chicago/wp-content/uploads/sites/2/2017/08/Rebuilding-Together.jpg" alt="News Image" class="news-image1" />
+  </div>
+  <div class="news-content1">
+    <h3 class="news-title1">Rebuilding Together</h3>
+    <p class="news-text1">Rebuilding Together is a nonprofit organization that aims to provide safe and healthy housing for low-income families and individuals in need in the United States. 
+Rebuilding Together works by mobilizing volunteers and community resources to help repair homes and improve living conditions for people in need. 
+      
+
+</p>
+    <a href="#" class="news-link1">Read More</a>
+  </div>
+</div>
+
+{/* 
+
 <h2>Financial Resources</h2> */}
         <div class="news-card">
           <div class="news-content">

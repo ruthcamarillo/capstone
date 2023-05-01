@@ -1,6 +1,6 @@
 .footer {
 
-  background-color: #173E76;
+  background-color: #062750;
   color: black;
   padding: 2rem;
   display: flex;
@@ -12,7 +12,7 @@
 
 .footer-content,
 .footer-section {
-  background-color: #173E76;
+  background-color:#062750;
   ;
 
 }
@@ -31,18 +31,18 @@
   font-size: 1.5rem;
   margin-bottom: 1rem;
   text-align: left;
-  color: #F1C40F;
+  color: white;
 }
 
 .footer p {
   margin-bottom: 0.5rem;
-  background-color: #173E76;
-  color: #F1C40F
+  background-color:#062750;
+  color: white
 }
 
 
 .footer h3 {
-  background-color: #173E76;
+  background-color:#062750;
   ;
 }
 
@@ -56,8 +56,8 @@
 }
 
 .footer-button:hover {
-  background-color: #D35400;
-  color: #F1C40F;
+  background-color: black;
+  color: white;
 }
 
 ul.footer-social {
@@ -65,7 +65,7 @@ ul.footer-social {
   padding: 0;
   margin: 0;
   /* color: white; */
-  background-color: #173E76;
+  background-color: #062750;
 }
 
 .footer-social li {
@@ -78,12 +78,12 @@ ul.footer-social {
 }
 
 .footer-social a {
-  background-color: #173E76;
+  background-color: #062750;
   color: aliceblue;
 }
 
 .footer-social a:hover {
-  color: #F1C40F;
+  color: lightblue;
 }
 
 .footer-attribution {
