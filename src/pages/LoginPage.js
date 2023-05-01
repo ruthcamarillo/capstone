@@ -38,11 +38,12 @@ export default function LoginPage() {
     };
 
     return (
-        <div>
+        <div className="formlogin">
 
             <form onSubmit={handleLogin} className="form">
                 <p class="title">Log In </p>
                 <p class="message">Log in now and get full access to our site. </p>
+                <p class="message"> If you dont have an account Click <Link to="/register">here</Link> to register.</p>
                 {errorMessage && <div className="error-message">{errorMessage}</div>}
 
 
