@@ -1,23 +1,113 @@
-.main {
+.bodyread {
+    background: #032754;
+    color: aliceblue;
+}
+
+.mainread {
     display: flex;
     justify-content: center;
+}
+
+.readForm {
+
+    margin: 3rem;
+    max-width: 50rem;
+    font-size: 20px;
+
 
 }
 
-.cards {
-
-    max-width: 250rem;
-    margin: 5rem;
-
-
-}
-
-.minicard {
+.sectionsearch {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-.card_img {
+.searchread {
+    margin-right: 1rem;
+    color: aliceblue;
+    font-size: 50px;
+}
 
-    max-width: 350px;
+input[type="text"] {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    font-size: 1.2rem;
+    flex-grow: 1;
+}
+
+
+
+button[type="submit"] {
+    padding: 0.5rem 2rem;
+    background-color: #032754;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.cardsread {
+    max-width: 75rem;
+    /* reduce max width to make cards smaller */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* allow cards to wrap onto a new line */
+}
+
+.minicardread {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    padding: 2rem;
+    background: white;
+    height: 30rem;
+    /* reduce height to make cards smaller */
+    flex-basis: calc(50% - 4rem);
+    /* set initial size to half the width of the container */
+    flex-grow: 1;
+    /* allow cards to grow and fill any extra space */
+    border-radius: 10px;
+    box-shadow: 10px 10px lightblue;
+}
+
+.minicardread:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.title_apiread {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: #032754;
+}
+
+.card_imgread {
+    width: 100%;
+    max-height: 20rem;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+p {
+    text-align: justify;
+    margin-top: 0;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
 }
