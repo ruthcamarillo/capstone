@@ -14,9 +14,6 @@ function Resources() {
   return (
     <div>
       <TheNav />
-
-
-
       <main className="resources-container">
 
         <div className="hero-section">
