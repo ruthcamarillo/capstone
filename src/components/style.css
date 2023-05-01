@@ -8,7 +8,7 @@ Home * {
 
 .containment {
     height: 600px;
-
+    background: #032754;
 }
 
 .wrapper-c {
@@ -110,5 +110,6 @@ Home * {
     color: #5F89BD;
     text-transform: uppercase;
     font-size: 3rem;
+    height: 60px;
 
 }

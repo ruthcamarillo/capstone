@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: white;
+    
 }
 
 body {
@@ -13,9 +14,9 @@ body {
 }
 
 .contain {
-    height: 700px;
+    height: 800px;
     transform: translateY(-30px);
-    background-color: #032754;
+    background: #032754;
 }
 
 #earth-c {
