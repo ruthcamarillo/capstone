@@ -73,8 +73,12 @@ function Contact() {
         </p>
       )}
       <form onSubmit={handleSubmit} className="contact-form">
-        <div>
+        <div className='contactus'>
           <h1>Contact Us!</h1>
+          <p>Thank you for your interest in contacting us. We welcome your comments, questions, and feedback. Please fill out the form below and we will respond to your inquiry as soon as possible. If you are reporting a problem or emergency, please call the appropriate number listed on our website.
+
+Our team is dedicated to providing you with excellent service and support. Whether you have a general inquiry or need assistance with one of our products or services, we are here to help. We value your feedback and strive to continuously improve our offerings to meet your needs.</p>
+
           <label htmlFor="name">Name:</label>
           <input
             type="text"

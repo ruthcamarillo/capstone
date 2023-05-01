@@ -1,28 +1,28 @@
 
 
 .contact-form{
-  background-image: url('../images/svg1.svg');
+  background-image: url('https://besthqwallpapers.com/Uploads/16-4-2022/198172/thumb2-europe-from-space-blue-rays-digital-art-sci-fi-universe.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  opacity: 80%;
+  /* opacity: 80%; */
   padding: 10%;
-  
-  /* display: flex; */
   flex-direction: column;
   align-items: center;
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
-  /* background-image: #f9f9f9; */
   padding: 40px;
-  /* border-radius: 20px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); */
+  border-radius: 10%;
+ 
+}
+h6{
+  color:white ;
 }
 
 form label {
   font-size: 1rem;
-  color: black;
+  color: white;
   margin-bottom: 10px;
 }
 
@@ -75,7 +75,4 @@ form button[type='submit']:hover {
   }
 }
 
-/* @media screen and (min-width: 992px) {
-  .contact-form {
-    /* max-width: 70%; */
-  
+

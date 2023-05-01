@@ -2,26 +2,19 @@ import React, { useState } from 'react';
 import './Resources.css';
 // import heroimage3 from '../images/heroimage3.gif';
 import TheNav from '../components/TheNav'
-
-
 function Resources() {
   // const [showVolunteerForm, setShowVolunteerForm] = useState(false);
-
   // const handleVolunteerClick = () => {
   //   setShowVolunteerForm(!showVolunteerForm);
   // };
-
   return (
     <div>
       <TheNav />
       <main className="resources-container">
-
         <div className="hero-section">
           <h1 className="resources-header">Disaster Relief Resources</h1>
           {/* <img src={heroimage3.gi} alt="Disaster Relief Fund" className="hero-image3" /> */}
         </div>
-
-
         <section className="articles-section">
           <div className="conatainer-res">
             <h2 className="section-title11">Disaster Preparedness Tips</h2>
@@ -34,7 +27,6 @@ function Resources() {
                   <a href="https://www.ready.gov/kit?gclid=EAIaIQobChMIx8Wow4vL_gIV4vbjBx1_2g8QEAAYASAAEgJkCPD_BwE" className="article-link">Read More</a>
                 </div>
               </div>
-
               <div className="article-card">
                 <img src="https://media.istockphoto.com/id/1179769290/vector/women-who-feel-anxious-about-disaster.jpg?s=612x612&w=0&k=20&c=AR6IwRkNzvJujylTbE4owekk20n1Fspw33UlkJhzIcE=" alt="Article Image" className="article-image" />
                 <div className="article-content">
@@ -43,7 +35,6 @@ function Resources() {
                   <a href="https://stories.globalcommunities.org/crisis-to-resilience/index.html?utm_source=google_adwords&utm_medium=paid&utm_campaign=shorthand&gad=1&gclid=EAIaIQobChMI2cXp2IvL_gIVwoJbCh1QlQC7EAAYASAAEgKboPD_BwE" className="article-link">Read More</a>
                 </div>
               </div>
-
               <div className="article-card">
                 <img src="https://media.istockphoto.com/id/1263052067/vector/tsunami-consequences-rescue-male-female-character-evacuation-save-inflatable-boat-people.jpg?s=612x612&w=0&k=20&c=Q4ndN2BcqaK5thkGTFdbuxLYgZBI-tXTYf1Bx-XxUms=" alt="Article Image" className="article-image" />
                 <div className="article-content">
@@ -55,9 +46,6 @@ function Resources() {
             </div>
           </div>
         </section>
-
-
-
         <h2>Check Out These Resources That Provide Relief!</h2>
         <div class="news-card">
           <div class="news-content">
@@ -71,9 +59,6 @@ function Resources() {
             <img src="https://i0.wp.com/sammyapproves.com/wp-content/uploads/2021/10/Habitat-for-Humanity-MOB-small-6.gif" alt="News Image" class="news-image" />
           </div>
         </div>
-
-
-
         <div class="news-card1">
           <div class="news-image-container1">
             <img src="https://better.net/chicago/wp-content/uploads/sites/2/2017/08/Rebuilding-Together.jpg" alt="News Image" class="news-image1" />
@@ -82,14 +67,11 @@ function Resources() {
             <h3 class="news-title1">Rebuilding Together</h3>
             <p class="news-text1">Rebuilding Together is a nonprofit organization that aims to provide safe and healthy housing for low-income families and individuals in need in the United States.
               Rebuilding Together works by mobilizing volunteers and community resources to help repair homes and improve living conditions for people in need.
-
-
             </p>
             <a href="#" class="news-link1">Read More</a>
           </div>
         </div>
-
-        {/* 
+        {/*
 <h2>Financial Resources</h2> */}
         <div class="news-card">
           <div class="news-content">
@@ -102,7 +84,6 @@ function Resources() {
             <img src="https://s3.amazonaws.com/resources-govwin-com/blog/Image/FEMA%20PA%20Grants%20June8.PNG" alt="News Image" class="news-image" />
           </div>
         </div>
-
         <section className="images-section4">
           <div className="conatainer-res4">
             <h2 className="section-title4">"Swift & Decisive Action After Natural Disasters Occur"</h2>
@@ -116,14 +97,6 @@ function Resources() {
             </div>
           </div>
         </section>
-
-
-
-
-
-
-
-
         {/* <div className="news-card">
         <img src="https://www.sahf.org/wp-content/uploads/2021/05/program_wesupport.png" alt="News Image" className="news-image" />
         <div className="news-details">
@@ -133,13 +106,8 @@ function Resources() {
           <a href="#" className="news-link">Read More</a>
         </div>
       </div> */}
-
-
       </main>
     </div>
   );
 }
-
 export default Resources;
-
-
