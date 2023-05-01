@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Axios from 'axios';
 import './Contact.css';
+import TheNav from '../components/TheNav'
 
 function Contact() {
   // Declare state variables for form fields and submission status
@@ -61,6 +62,8 @@ function Contact() {
   return (
 
     <>
+      <TheNav />
+
       {submissionStatus === 'success' && (
         <p className="confirmation2">Hey {name}, Your message was sent successfully! Thank you for talking with us!</p>
       )}
