@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import './Resources.css';
-import heroimage3 from '../images/heroimage3.gif';
+// import heroimage3 from '../images/heroimage3.gif';
 import TheNav from '../components/TheNav'
 
 
 function Resources() {
-  const [showVolunteerForm, setShowVolunteerForm] = useState(false);
+  // const [showVolunteerForm, setShowVolunteerForm] = useState(false);
 
-  const handleVolunteerClick = () => {
-    setShowVolunteerForm(!showVolunteerForm);
-  };
+  // const handleVolunteerClick = () => {
+  //   setShowVolunteerForm(!showVolunteerForm);
+  // };
 
   return (
     <div>
