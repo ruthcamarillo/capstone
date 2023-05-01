@@ -42,10 +42,10 @@
 
 .logo {
     /* position: fixed; */
-    display: flex;
+    /* display: flex; */
     align-items: center;
     width: 100px;
-    padding-left: 100px;
+    /* padding-left: 1px; */
     height: auto;
     border-radius: 10px;
 }
@@ -118,6 +118,10 @@
     color: var(--text-color);
     cursor: pointer;
     z-index: 10001;
+    display: none;
+}
+
+h6 {
     display: none;
 }
 
