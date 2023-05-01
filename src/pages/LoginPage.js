@@ -38,37 +38,40 @@ export default function LoginPage() {
     };
 
     return (
-        <div className="formlogin">
+        <div className="loginSection">
 
-            <form onSubmit={handleLogin} className="form">
-                <p class="title">Log In </p>
-                <p class="message">Log in now and get full access to our site. </p>
-                <p class="message"> If you dont have an account Click <Link to="/register">here</Link> to register.</p>
-                {errorMessage && <div className="error-message">{errorMessage}</div>}
+            <h1 className="loginTitle"> Disaster Dispatch </h1>
+            <div className="formlogin">
+                <form onSubmit={handleLogin} className="form">
+                    <p class="title">Log In </p>
+                    <p class="message">Log in now and get full access to our site. </p>
+                    <p class="message"> If you dont have an account Click <Link to="/register">here</Link> to register.</p>
+                    {errorMessage && <div className="error-message">{errorMessage}</div>}
 
 
-                <label>
-                    <input name="email"
-                        placeholder="Email"
-                        className="input-field"
-                        type="text"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)} required />
+                    <label>
+                        <input name="email"
+                            placeholder="Email"
+                            className="input-field"
+                            type="text"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)} required />
 
-                </label>
+                    </label>
 
-                <label>
-                    <input name="password"
-                        placeholder="Password"
-                        className="input-field"
-                        type="password"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)} required />
+                    <label>
+                        <input name="password"
+                            placeholder="Password"
+                            className="input-field"
+                            type="password"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)} required />
 
-                </label>
-                <button className="submit">Submit</button>
-            </form>
+                    </label>
+                    <button className="submit">Submit</button>
+                </form>
 
+            </div>
         </div>
     );
 }
