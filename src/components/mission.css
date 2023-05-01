@@ -1,12 +1,12 @@
 .contain-b{
    position: relative;
-   width: 1400px;
+   width: 1500px;
    display: flex;
    justify-content: center;
    align-items: center;
    flex-wrap: wrap;
    padding: 50px;
-   
+   background: #032754;
 }
 
 .heading-2{
@@ -17,6 +17,7 @@
     color: #5F89BD;
     text-transform: uppercase;
     font-size: 3rem;
+    background: #032754;
 }
 .heading-4{
     margin: 0;
@@ -28,6 +29,7 @@
     padding-left: 20%;
     padding-right: 20%;
     font-family: 'Urbanist', sans-serif;
+    background: #032754;
 }
 .heading-natural{
     font-family: 'Urbanist', sans-serif;
