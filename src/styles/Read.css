@@ -76,6 +76,9 @@ button[type="submit"] {
     /* allow cards to grow and fill any extra space */
     border-radius: 10px;
     box-shadow: 10px 10px lightblue;
+    overflow: hidden;
+    /* add this line */
+
 }
 
 .minicardread:hover {
@@ -104,10 +107,57 @@ p {
     text-align: justify;
     margin-top: 0;
     color: black;
+    overflow-wrap: break-word;
+    /* wrap long words to new line */
+    text-overflow: ellipsis;
+    /* truncate text with ... when it overflows */
+    max-width: 100%;
+    /* prevent text from overflowing the container */
 }
 
 h1 {
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 3rem;
+}
+
+
+/* For phones */
+@media (max-width: 768px) {
+    .readForm {
+        margin: 1rem;
+        font-size: 16px;
+    }
+
+    .minicardread {
+        height: 20rem;
+        margin: 1rem;
+        padding: 1rem;
+        flex-basis: calc(100% - 2rem);
+        font-size: 16px;
+
+    }
+
+    .cardsread {
+        max-width: 100%;
+    }
+}
+
+/* For tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .readForm {
+        margin: 2rem;
+        font-size: 18px;
+    }
+
+    .minicardread {
+        height: 25rem;
+        margin: 2rem;
+        padding: 2rem;
+        flex-basis: calc(50% - 4rem);
+    }
+
+    .cardsread {
+        max-width: 100%;
+    }
 }

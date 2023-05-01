@@ -1,5 +1,6 @@
 
 import React, { useState } from "react";
+import { Link, useNavigate } from 'react-router-dom';
 import Axios from 'axios';
 import '../styles/Register.css'
 
@@ -8,27 +9,24 @@ function Register() {
     const [emailReg, setEmailReg] = useState("")
     const [passwordReg, setPasswordReg] = useState("")
     const [message, setMessage] = useState("");
+    const navigate = useNavigate();
     const register = () => {
         Axios.post('http://localhost:3001/register', {
             name: nameReg,
             email: emailReg,
             password: passwordReg,
-        }).then((response) => {
-            console.log(response);
-            setMessage(`You are registered  ${nameReg}!`);
-            setnameReg("");
-            setEmailReg("");
-            setPasswordReg("");
+        }).then(() => {
+            navigate("/home");
         }).catch((error) => {
             console.error(error);
             setMessage("Registration failed. Please try again.");
         });
-
+        return false;
     }
     return (
         <div className="App">
-            <h1>Registration</h1>
-            {message && <h2>{message}</h2>}
+            <h1 className="loginTitle">Registration</h1>
+            {/* {message && <h2 className="confirmation2">{message}</h2>} */}
             <div className="registration">
 
                 <form className="registerForm">
@@ -50,7 +48,7 @@ function Register() {
                             setPasswordReg(e.target.value);
                         }} required
                     />
-                    <button class="submit" onClick={register}>Register</button>
+                    <Link to="/home"><button className="submit" onClick={register}>Register</button></Link>
                 </form>
 
             </div >

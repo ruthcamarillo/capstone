@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/Read.css'
+import TheNav from '../components/TheNav'
 
 
 const Read = () => {
@@ -25,28 +26,31 @@ const Read = () => {
     }
 
     return (
-        <div className="bodyread">
-            <h1>Latest Natural Disaster News</h1>
-            <div className="sectionsearch">
-                <form className="readForm" onSubmit={handleSubmit}>
-                    <label className="searchread">Search:</label>
-                    <input type="text" id="search" name="search" defaultValue={searchQuery} />
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
-            <div className="mainread">
-                <div className="cardsread">
-                    {news.map((article) => (
-                        <div className='minicardread' key={article.url}>
-                            <a className="title_apiread" href={article.url} target="_blank" rel="noreferrer">
-                                <h3>
-                                    {article.title}
-                                </h3>
-                                <img className="card_imgread" src={article.urlToImage} alt="article thumbnail" />
-                            </a>
-                            <p>{article.description}</p>
-                        </div>
-                    ))}
+        <div>
+            <TheNav />
+            <div className="bodyread">
+                <h1>Latest Natural Disaster News</h1>
+                <div className="sectionsearch">
+                    <form className="readForm" onSubmit={handleSubmit}>
+                        <label className="searchread">Search:</label>
+                        <input type="text" id="search" name="search" defaultValue={searchQuery} />
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <div className="mainread">
+                    <div className="cardsread">
+                        {news.map((article) => (
+                            <div className='minicardread' key={article.url}>
+                                <a className="title_apiread" href={article.url} target="_blank" rel="noreferrer">
+                                    <h3>
+                                        {article.title}
+                                    </h3>
+                                    <img className="card_imgread" src={article.urlToImage} alt="article thumbnail" />
+                                </a>
+                                <p>{article.description}</p>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>
