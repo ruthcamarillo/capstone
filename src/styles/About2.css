@@ -1,74 +1,74 @@
 /* Style for team members section */
 #aboutus {
-    margin: 50px auto;
-    max-width: 1200px;
-    text-align: center;
-  }
-  
-  .our_team {
-    display: flex;
-    flex-wrap: wrap;
+  margin: 50px auto;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.our_team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team_member {
+  width: 90%;
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  animation: slide-in 1s ease-in-out;
+}
+
+.member_img {
+  width: 40%;
+  margin-right: 10%;
+}
+
+.member_img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.team_member h3,
+.team_member span,
+.team_member p {
+  margin: 0;
+  padding: 10px;
+  text-align: left;
+}
+
+.team_member span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .team_member {
+    flex-direction: column;
     justify-content: center;
   }
-  
-  .team_member {
-    width: 90%;
-    margin: 20px 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    animation: slide-in 1s ease-in-out;
-  }
-  
+
   .member_img {
-    width: 40%;
-    margin-right: 10%;
+    width: 80%;
+    margin-right: 0;
+    margin-bottom: 20px;
   }
-  
-  .member_img img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation for sliding in team members */
+@keyframes slide-in {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
   }
-  
-  .team_member h3,
-  .team_member span,
-  .team_member p {
-    margin: 0;
-    padding: 10px;
-    text-align: left;
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
-  
-  .team_member span {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  @media (max-width: 768px) {
-    .team_member {
-      flex-direction: column;
-      justify-content: center;
-    }
-  
-    .member_img {
-      width: 80%;
-      margin-right: 0;
-      margin-bottom: 20px;
-    }
-  }
-  
-  /* Animation for sliding in team members */
-  @keyframes slide-in {
-    0% {
-      transform: translateY(50px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  
+}
