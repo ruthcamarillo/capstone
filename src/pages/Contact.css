@@ -1,6 +1,4 @@
-
-
-.contact-form{
+.contact-form {
   background-image: url('https://besthqwallpapers.com/Uploads/16-4-2022/198172/thumb2-europe-from-space-blue-rays-digital-art-sci-fi-universe.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,10 +12,11 @@
   margin: 0 auto;
   padding: 40px;
   border-radius: 10%;
- 
+
 }
-h6{
-  color:white ;
+
+h6 {
+  color: white;
 }
 
 form label {
@@ -35,9 +34,11 @@ form textarea {
   border-radius: 5px;
   font-size: 1.1rem;
 }
-h1{
+
+h1 {
   color: red;
 }
+
 form textarea {
   height: 150px;
 }
@@ -63,6 +64,10 @@ form button[type='submit']:hover {
   padding: 20px;
 }
 
+.contactp {
+  color: whitesmoke;
+}
+
 @media screen and (max-width: 767px) {
   .contact-form {
     max-width: 100%;
@@ -74,5 +79,3 @@ form button[type='submit']:hover {
     max-width: 80%;
   }
 }
-
-

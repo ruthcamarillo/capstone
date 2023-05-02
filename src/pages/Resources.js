@@ -46,7 +46,7 @@ function Resources() {
             </div>
           </div>
         </section>
-        <h2>Check Out These Resources That Provide Relief!</h2>
+        <h2 className="resourcesh2">Check Out These Resources That Provide Relief!</h2>
         <div class="news-card">
           <div class="news-content">
             <h3 class="news-title1">Habitat for Humanity  </h3>

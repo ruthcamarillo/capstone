@@ -1,130 +1,133 @@
-
 /* Hero section */
 .hero-section {
-    height: 400px;
-/* background-color: white; */
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    background-image: url(https://usa.humanityfirst.org/wp-content/uploads/2018/11/Disaster-Relief-Garland-Texas.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 10%;
-  }
-  
-  /* Overlay on top of hero image */
-  .hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 90%;
-    height: 90%;
-    background-color: white;
-  }
-  
+  height: 400px;
+  /* background-color: white; */
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-image: url(https://usa.humanityfirst.org/wp-content/uploads/2018/11/Disaster-Relief-Garland-Texas.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10%;
+}
+
+/* Overlay on top of hero image */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 90%;
+  background-color: white;
+}
+
 
 /* resources Header */
 
 
 
-h1.resources-header{
+h1.resources-header {
   color: white;
 }
 
 
-  /* Header */
-  .resources-header {
-    text-align: left;
-  
-    margin-top: 50px;
-margin-bottom: 400px;
-  }
-  
-  /* Articles Section lines 46-111 Keep Code*/
-  h2.section-title{
-    text-align: center;
+/* Header */
+.resources-header {
+  text-align: left;
 
-  }
-h2.articles-section{
+  margin-top: 50px;
+  margin-bottom: 400px;
+}
+
+/* Articles Section lines 46-111 Keep Code*/
+h2.section-title {
+  text-align: center;
+
+}
+
+h2.articles-section {
   padding: 5%;
 }
-  .articles-section {
-    background-color: #032754;
-    padding: 50px 0;
-  }
-  .section-title11{color: white;
-    padding: 5%;
 
-  }
+.articles-section {
+  background-color: #032754;
+  padding: 50px 0;
+}
+
+.section-title11 {
+  color: white;
+  padding: 5%;
+
+}
 
 
-  .articles-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
-    margin-top: 30px;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-  
-  .article-card {
-    background-color: #173E76;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    overflow: hidden;
-    transition: box-shadow 0.3s ease;
-  }
-  
-  .article-card:hover {
-    box-shadow: 0 0 20px rgba(0,0,0,0.2);
-  }
-  
-  .article-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .article-content {
-    padding: 20px;
-  }
-  
-  .article-title {
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 0;
-    margin-bottom: 10px;
-  }
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  margin-top: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
 
-  h3.article-title{
-    color: aliceblue;
-  }
-  
-  .article-text {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-top: 0;
-    margin-bottom: 20px;
-    color: white;
-  }
-  
-  .article-link {
-    display: inline-block;
-    background-color: #007bff;
-    color: #ffffff;
-    font-size: 14px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-  }
-  
-  .article-link:hover {
-    background-color: #0062cc;
-  }
-  
+.article-card {
+  background-color: #173E76;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.article-card:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.article-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.article-content {
+  padding: 20px;
+}
+
+.article-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+h3.article-title {
+  color: aliceblue;
+}
+
+.article-text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.article-link {
+  display: inline-block;
+  background-color: #007bff;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.article-link:hover {
+  background-color: #0062cc;
+}
+
 /* End of Articles Section lines 46-111 Keep Code*/
 
 .images-section4 {
@@ -139,34 +142,38 @@ h2.articles-section{
   text-align: center;
 }
 
-.section-title4 {font-size: 2.5rem;
+.section-title4 {
+  font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 30px;
-  }
-  
-  .images-grid4 {
+}
+
+.images-grid4 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 20px;
-  }
-  
-  .image4 {
+}
+
+.image4 {
   width: 100%;
   height: auto;
   display: block;
   border-radius: 5px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-  }
-  
-  @media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 768px) {
   .images-grid4 {
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
-  }
+}
 
 
 
-
+.resourcesh2 {
+  color: whitesmoke;
+  font-size: 40px;
+}
 
 
 /* Resource News Article */
@@ -177,6 +184,7 @@ h2.articles-section{
   align-items: center;
   padding: 100px;
   padding: 15%;
+  background-color: lightblue;
   /* border: 1px solid #ccc; */
 }
 
@@ -196,13 +204,13 @@ h2.articles-section{
   box-shadow: 10px 10px lightblue;
 }
 
-p.news-text{
+p.news-text {
   text-align: left;
-  text-decoration:wavy;
- 
+  text-decoration: wavy;
+
 }
 
-h3{
+h3 {
   text-align: center;
 }
 
@@ -214,17 +222,20 @@ h3{
   align-items: center;
   padding: 100px;
   padding: 10%;
-  background-color:#032754 ;
+  background-color: #173E76;
+  ;
   /* border: 1px solid #ccc; */
 }
 
-h3.news-title12{
+h3.news-title12 {
   color: black;
 }
 
 .news-content1 {
-  flex: 0 0 60%; /* adjust the flex basis to be wider */
-  margin-left: 20px; /* adjust the margin to be on the left */
+  flex: 0 0 60%;
+  /* adjust the flex basis to be wider */
+  margin-left: 20px;
+  /* adjust the margin to be on the left */
 }
 
 .news-image-container1 {
@@ -244,11 +255,12 @@ p.news-text1 {
   color: white;
   /* text-transform: uppercase; */
 }
-h3.news-title1{
+
+h3.news-title1 {
   color: white;
 }
 
-h3.news-title23{
+h3.news-title23 {
   color: white;
 }
 
@@ -263,116 +275,117 @@ h2 {
 
 ul {
   list-style: none;
- 
+
 
 }
 
-  /* Animations */
+/* Animations */
 
-.hero-image3{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    animation: slideIn 2s forwards;
-    background-image: url(https://www.gannett-cdn.com/experiments/usatoday/gifs/tool/1490-ShelteratHome.gif);
-    background-repeat: no-repeat;
-    }
-    
-    @keyframes slideIn {
-    from {
+.hero-image3 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: slideIn 2s forwards;
+  background-image: url(https://www.gannett-cdn.com/experiments/usatoday/gifs/tool/1490-ShelteratHome.gif);
+  background-repeat: no-repeat;
+}
+
+@keyframes slideIn {
+  from {
     transform: translateX(-50%);
     opacity: 0;
-    }
-    to {
+  }
+
+  to {
     transform: translateX(0);
     opacity: 1;
-    }
-    }
-    
-    .video-iframe {
-    width: 100%;
-    height: 500px;
-    border: none;
-    animation: fadeIn 1s forwards;
-    }
-    
-    @keyframes fadeIn {
-    from {
+  }
+}
+
+.video-iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
     opacity: 0;
-    }
-    to {
+  }
+
+  to {
     opacity: 1;
-    }
-    }
-    
-    .volunteer-form {
-    display: flex;
-    flex-direction: column;
-    /* align-items: flex-start; */
-    animation: slideInFromRight 1s forwards;
-    }
-    
-    @keyframes slideInFromRight {
-    from {
+  }
+}
+
+.volunteer-form {
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  animation: slideInFromRight 1s forwards;
+}
+
+@keyframes slideInFromRight {
+  from {
     transform: translateX(50%);
     opacity: 0;
-    }
-    to {
+  }
+
+  to {
     transform: translateX(0);
     opacity: 1;
-    }
-    }
-    
- /* Media Queries
+  }
+}
+
+/* Media Queries
      */
-    @media (min-width: 768px) {
-    .resources-container {
+@media (min-width: 768px) {
+  .resources-container {
     /* display: flex; */
     flex-wrap: wrap;
     justify-content: space-between;
-    }
+  }
 }
-    .hero-section {
-    flex-basis: 50%;
-    height: 80vh;
-    position: relative;
-    overflow: hidden;
-    }
-    
-    .articles-container {
-        background-color: white;
-    flex-basis: calc(50% - 40px);
-    }
-    
-    
-    
-    .donate-container {
-        background-color: black;
-    flex-basis: 100%;
-  
-    }
-    
-    .articles-list {
-    display: flex;
-   
-    padding-left: 10%;
-    }
-    
-    .article-item {
-    margin-bottom: 20px;
-    list-style: none;
-    }
-    
-    .article-item a {
-    color: burnt orange;
-    font-size: 1.2rem;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
-    }
-    
-    .article-item a:hover {
-    color: orange;
-    } 
-   
-  
 
+.hero-section {
+  flex-basis: 50%;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.articles-container {
+  background-color: white;
+  flex-basis: calc(50% - 40px);
+}
+
+
+
+.donate-container {
+  background-color: black;
+  flex-basis: 100%;
+
+}
+
+.articles-list {
+  display: flex;
+
+  padding-left: 10%;
+}
+
+.article-item {
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.article-item a {
+  color: burnt orange;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.article-item a:hover {
+  color: orange;
+}
